@@ -5,9 +5,9 @@
 ; # Win
 
 ; Dev
- !+=::Send("{U+002B}{U+003D}")                    ;       Alt++  +=      Addition Assignment
+  !+=::Send("{U+002B}{U+003D}")                    ;       Alt++  +=      Addition Assignment
   !-::Send("{U+002D}{U+003D}")                    ;       Alt+-  -=      Subtraction Assignment
- !+8::Send("{U+002A}{U+003D}")                    ;       Alt+*  *=      Multiply Assignment
+  !+8::Send("{U+002A}{U+003D}")                    ;       Alt+*  *=      Multiply Assignment
   !/::Send("{U+002F}{U+003D}")                    ;       Alt+/  /=      Division Assignment
   !=::Send("{U+003D}{U+003D}{U+003D}")            ;       Alt+=  ===     Strict Equality
  !+1::Send("{U+0021}{U+003D}{U+003D}")            ;       Alt+!  !==     Strict Inequality
@@ -28,4 +28,9 @@
         Send("{left 3}")
         Send("{Enter 2}{Up}{Tab}")
     }
+#HotIf
+
+#HotIf WinActive("ahk_exe Tabby.exe")
+    ^PgUp:: Send("^+{Left}")                      ;  Previous Tab
+    ^PgDn:: Send("^+{Right}")                     ;  Next Tab
 #HotIf
