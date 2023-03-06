@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.5.0
+
+- Add task manager key on `STG` layer
+
 ## 5.4.0
 
 - Remap all settings key and windows shortcut

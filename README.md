@@ -239,6 +239,7 @@ Dedicated to Bluetooth and media controls.
 | <kbd>🔅</kbd>  | Bright down              |
 | <kbd>🔆</kbd>  | Bright up                |
 | <kbd>⎉</kbd>   | Connect Quick Action     |
+| <kbd>▤</kbd>   | Task Manager             |
 | <kbd>ⓘ</kbd>   | System Info             |
 | <kbd>⛨</kbd>   | Windows Security        |
 | <kbd>⎈</kbd>   | Windows Settings         |
