@@ -34,3 +34,8 @@
     ^PgUp:: Send("^+{Left}")                      ;  Previous Tab
     ^PgDn:: Send("^+{Right}")                     ;  Next Tab
 #HotIf
+
+#HotIf WinActive("ahk_exe WindowsTerminal.exe")
+    ^PgUp:: Send("^+{Tab}")                       ;  Previous Tab
+    ^PgDn:: Send("^{Tab}")                        ;  Next Tab
+#HotIf
