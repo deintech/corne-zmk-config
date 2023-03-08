@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 5.6.0
+
+- Update layer icons replacing emoji icons for Unicode letters
+- update AHK keys combinations
+
 ## 5.5.0
 
 - Add task manager key on `STG` layer

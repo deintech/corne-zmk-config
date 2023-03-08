@@ -9,8 +9,8 @@ ChangeIcon("KBD")
 ; Fix to stuck keys
 A_MenuMaskKey := "vkFF"        ;  Unassigned. Avoid Ctrl get stuck
 ; A_MenuMaskKey := "vkE8"      ;  No Mapping. Avoid Alt get stuck
-KeyWait "RControl", "L"        ; Wait for both Control and Alt to be released.
-KeyWait "RAlt", "L"            ; Wait for both Control and Alt to be released.
+KeyWait "RControl", "L"        ;  Wait for Control to be released
+KeyWait "RAlt", "L"            ;  Wait for Alt to be released
 
 ; Combos
 #Include "keys.ahk"

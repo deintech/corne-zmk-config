@@ -24,7 +24,6 @@
 
 
 ; Symbols
-  !q::Send("{U+0040}")                   ;      Alt+q  @
 #!+/::Send("{U+00BF}")                   ;  Win+Alt+?  ¿
 #^+/::Send("{U+00BF}{U+003F}{left 1}")   ; Win+Ctrl+?  ¿?
 #!+1::Send("{U+00A1}")                   ;  Win+Alt+!  ¡
@@ -41,5 +40,5 @@
 
 ; Settings
 #HotIf WinActive("ahk_exe code.exe")
- ^0::Send("^{Numpad0}")                 ;      Ctrl+0  Zoom Reset
+  ^0::Send("^{Numpad0}")                 ;      Ctrl+0  Zoom Reset
 #HotIf
