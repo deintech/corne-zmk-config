@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 6.0.0
+
+- Move Function keys to Left half to use the mouse withe Right hand while debugging
+- Add shift to `STG` button layer to prevent accidental activation
+
 ## 5.6.0
 
 - Update layer icons replacing emoji icons for Unicode letters

@@ -25,15 +25,6 @@ mo_AXNBAS_to_AXN: hold_mo_AXNBAS_to_AXN {
     bindings = <&mo_AXN_to_BAS>, <&to_AXN>;
 };
 
-mo_STGBAS_to_STG: hold_mo_STGBAS_to_STG {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_STGBAS_to_STG";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_STG_to_BAS>, <&to_STG>;
-};
-
 mo_DEVBAS_to_DEV: hold_mo_DEVBAS_to_DEV {
     compatible = "zmk,behavior-hold-tap";
     label = "mo_DEVBAS_to_DEV";

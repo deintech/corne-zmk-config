@@ -78,7 +78,7 @@
             #define B21  &hm RCTRL  I
             #define B22  &hm RCMD   O
 
-            #define B35  &mo_STGBAS_to_STG  0 0
+            #define B35  &mp_stg
 
             #define B36  &mo_DEVBAS_to_DEV  0 0
             #define B38  &mo_AXNBAS_to_FNK  0 0
@@ -152,26 +152,25 @@
         };
 
         functions_layer {
-            #define K13  &kp LCMD
-            #define K14  &hm LCTRL  HOME
-            #define K15  &hm LALT   PG_DN
-            #define K16  &hm LSHFT  END
+            #define K13  &hm LCMD   F5
+            #define K14  &hm LCTRL  F6
+            #define K15  &hm LALT   F7
+            #define K16  &hm LSHFT  F8
 
-            #define K19  &hm RSHFT  F5
-            #define K20  &hm RALT   F6
-            #define K21  &hm RCTRL  F7
-            #define K22  &hm RCMD   F8
+            #define K19  &kp RSHFT
+            #define K20  &hm RALT   HOME
+            #define K21  &hm RCTRL  PG_DN
+            #define K22  &hm RCMD   END
 
-            #define K36  &to_AXN
             #define K38  &to_BAS
             #define K39  &to_DEV
 
             label = "FNK";
             bindings = <
-    KEY_ESC  &none  &none  &kp PG_UP    &none  &none                  &none   &kp F9  &kp F10  &kp F11  &kp F12   NAV_DEL
-     &mp_bc    K13    K14        K15      K16  &none                  &none      K19      K20      K21      K22  NAV_BSPC
-    KEY_TAB  &none  &none      &none    &none  &none                  &none   &kp F1   &kp F2   &kp F3   &kp F4    &mp_cs
-                                 K36  KEY_SPC    K38                    K39  KEY_RET   &mp_dc
+    KEY_ESC  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &none    &none  &kp PG_UP    &none    &none   NAV_DEL
+     &mp_bc     K13      K14      K15      K16  &none                  &none      K19        K20      K21      K22  NAV_BSPC
+    KEY_TAB  &kp F1   &kp F2   &kp F3   &kp F4  &none                  &none    &none      &none    &none    &none     &none
+                               &mp_cs  KEY_SPC    K38                    K39  KEY_RET     &mp_dc
             >;
         };
 
