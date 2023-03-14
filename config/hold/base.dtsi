@@ -5,6 +5,7 @@ hm_b_lcmd: behavior_base_lcmd {
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_i_a>;
+    hold-trigger-key-positions = <13>;
 };
 
 hm_b_rshf: behavior_base_rshf {
@@ -14,6 +15,7 @@ hm_b_rshf: behavior_base_rshf {
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_i_n>;
+    hold-trigger-key-positions = <19>;
 };
 
 hm_b_ralt: behavior_base_ralt {
@@ -23,6 +25,7 @@ hm_b_ralt: behavior_base_ralt {
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_i_e>;
+    hold-trigger-key-positions = <20>;
 };
 
 hm_b_rctrl: behavior_base_rctrl {
@@ -32,6 +35,7 @@ hm_b_rctrl: behavior_base_rctrl {
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_i_i>;
+    hold-trigger-key-positions = <21>;
 };
 
 hm_b_rcmd: behavior_base_rcmd {
@@ -41,4 +45,5 @@ hm_b_rcmd: behavior_base_rcmd {
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_i_o>;
+    hold-trigger-key-positions = <22>;
 };
