@@ -3,15 +3,15 @@ mp_i_a: morph_a {
     label = "a";
     #binding-cells = <0>;
     mods = <(MOD_RALT)>;
-    bindings = <&kp A>, <&kp SQT &kp A>;
+    bindings = <&kp A>, <&m_i_a>;
 };
-
+aaa'
 mp_i_e: morph_e {
     compatible = "zmk,behavior-mod-morph";
     label = "e";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp E>, <&kp SQT &kp E>;
+    bindings = <&kp E>, <&m_i_e>;
 };
 
 mp_i_i: morph_i {
