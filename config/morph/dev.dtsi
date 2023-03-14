@@ -2,9 +2,8 @@ mp_d_money: morph_d_money {
     compatible = "zmk,behavior-mod-morph";
     label = "$ €";
     #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_RALT)>;
     bindings = <&kp DLLR>, <&kp RC(RA(N5))>;
-    keep-mods = <(MOD_RALT)>;
 };
 
 mp_d_a: morph_dev_asterisk {
