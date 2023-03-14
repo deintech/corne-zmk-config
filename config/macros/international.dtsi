@@ -1,0 +1,39 @@
+m_i_g: macro_int_grave {
+    compatible = "zmk,behavior-macro";
+    label = "`";
+    #binding-cells = <0>;
+    bindings =
+        <&kp GRAVE &kp SPACE>;
+};
+
+m_i_t: macro_int_tilde {
+    compatible = "zmk,behavior-macro";
+    label = "~";
+    #binding-cells = <0>;
+    bindings =
+        <&kp TILDE &kp SPACE>;
+};
+
+m_i_c: macro_int_caret {
+    compatible = "zmk,behavior-macro";
+    label = "^";
+    #binding-cells = <0>;
+    bindings =
+        <&kp CARET &kp SPACE>;
+};
+
+m_i_d: macro_int_doublequote {
+    compatible = "zmk,behavior-macro";
+    label = "\"";
+    #binding-cells = <0>;
+    bindings =
+        <&kp DQT &kp SPACE>;
+};
+
+m_i_s: macro_int_singlequote {
+    compatible = "zmk,behavior-macro";
+    label = "'";
+    #binding-cells = <0>;
+    bindings =
+        <&kp SQT &kp SPACE>;
+};

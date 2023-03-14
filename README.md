@@ -4,9 +4,9 @@ ZMK configuration for [swept-crkbd](https://github.com/AYM1607/swept-crkbd/) als
 
 ![Front](.github/images/keyboard/front.jpg)
 
-This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** layout), complemented with AHK scripts with Spanish accents, easy access to development symbols and JS/TS shortcuts.
+This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** international layout), complemented with AHK scripts with easy access to development symbols and JS/TS shortcuts.
 
-> **US International** layout is another alternative, but it has a critical downside (at least on Windows) for programming due to dead keys. We are going to lose speed because need to press two keys instead of one: the diacritic or accent followed by an ending character (space, tab or enter) to produce it.
+![US International](.github/images/layout/US-International.png)
 
 ---
 
@@ -87,20 +87,20 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 
 | Label        | Windows                                 | Android                                               |
 | :----------: | --------------------------------------: | ----------------------------------------------------: |
-| <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>a</kbd>              |
-| <kbd>Á</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>a</kbd> |
-| <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>e</kbd>              |
-| <kbd>É</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>e</kbd> |
-| <kbd>í</kbd> | <kbd>⌥</kbd>+<kbd>i</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>i</kbd>              |
-| <kbd>Í</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>i</kbd> |
-| <kbd>ó</kbd> | <kbd>⌥</kbd>+<kbd>o</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>o</kbd>              |
-| <kbd>Ó</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>o</kbd> |
-| <kbd>ú</kbd> | <kbd>⌥</kbd>+<kbd>u</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>u</kbd>              |
-| <kbd>Ú</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
-| <kbd>ü</kbd> | <kbd>^</kbd>+<kbd>u</kbd>               | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>u</kbd>              |
-| <kbd>Ü</kbd> | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>u</kbd>  | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
-| <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>               | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>n</kbd>              |
-| <kbd>Ñ</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>⇧</kbd>+<kbd>n</kbd> |
+| <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>a</kbd>              |
+| <kbd>Á</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>a</kbd> |
+| <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>e</kbd>              |
+| <kbd>É</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>e</kbd> |
+| <kbd>í</kbd> | <kbd>⌥</kbd>+<kbd>i</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>i</kbd>              |
+| <kbd>Í</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>i</kbd> |
+| <kbd>ó</kbd> | <kbd>⌥</kbd>+<kbd>o</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>o</kbd>              |
+| <kbd>Ó</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>o</kbd> |
+| <kbd>ú</kbd> | <kbd>⌥</kbd>+<kbd>u</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>u</kbd>              |
+| <kbd>Ú</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
+| <kbd>ü</kbd> | <kbd>^</kbd>+<kbd>y</kbd>               | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>u</kbd>              |
+| <kbd>Ü</kbd> | <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>y</kbd>  | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
+| <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>              | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>n</kbd>              |
+| <kbd>Ñ</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>⇧</kbd>+<kbd>n</kbd> |
 
 ##### Symbols
 
