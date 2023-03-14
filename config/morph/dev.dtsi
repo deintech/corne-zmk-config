@@ -3,7 +3,7 @@ mp_d_money: morph_d_money {
     label = "$ €";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp DLLR>, <&kp RA(N5)>;
+    bindings = <&kp DLLR>, <&kp RC(RA(N5))>;
 };
 
 mp_d_a: morph_dev_asterisk {
@@ -43,7 +43,7 @@ mp_d_s: morph_dev_slash {
     label = "/";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp FSLH>, <&kp RA(RS(A))>;
+    bindings = <&kp FSLH>, <&kp LA(LS(A))>;
 };
 
 mp_d_lao: morph_dev_logical_and_operator {
