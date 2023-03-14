@@ -77,7 +77,7 @@
             #define B16  &hm LSHFT   T
 
             #define B19  &hm_b_rshf  RSHFT  0  //N
-            #define B20  &hm_b_ralt  RALT   0  //E
+            #define B20  &hm_b_ralt  LALT   0  //E
             #define B21  &hm_b_rctrl RCTRL  0  //I
             #define B22  &hm_b_rcmd  RCMD   0  //O
 
@@ -104,7 +104,7 @@
             #define D16  &hm_d_lshf LSHFT   0
 
             #define D19  &hm_d_rshf RSHFT   0
-            #define D20  &hm        RALT    LBKT
+            #define D20  &hm        LALT    LBKT
             #define D21  &hm        RCTRL   RBKT
             #define D22  &hm_d_rcmd RCMD    0
 
@@ -161,7 +161,7 @@
             #define K16  &hm LSHFT  F8
 
             #define K19  &hm RSHFT  HOME
-            #define K20  &hm RALT   PG_DN
+            #define K20  &hm LALT   PG_DN
             #define K21  &hm RCTRL  END
             #define K22  &kp RCMD
 

@@ -2,9 +2,9 @@ mp_i_a: morph_a {
     compatible = "zmk,behavior-mod-morph";
     label = "a";
     #binding-cells = <0>;
-    mods = <(MOD_RALT)>;
+    mods = <(MOD_LALT)>;
     bindings = <&kp A>, <&kp RC(A)>;
-    keep-mods = <(MOD_RALT)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
 mp_i_e: morph_e {
