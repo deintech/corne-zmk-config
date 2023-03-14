@@ -9,8 +9,6 @@
 #^+/::Send("{U+00BF}{U+003F}{left 1}")   ; Win+Ctrl+?  ¿?
 #!+1::Send("{U+00A1}")                   ;  Win+Alt+!  ¡
 #^+1::Send("{U+00A1}{U+0021}{left 1}")   ; Win+Ctrl+!  ¡!
-#^+,::Send("{U+00AB}")                   ; Win+Ctrl+<  «
-#^+.::Send("{U+00BB}")                   ; Win+Ctrl+>  »
  ^+3::Send("{U+00B0}")                   ;     Ctrl+#  °
 #^+3::Send("{U+00AA}")                   ; Win+Ctrl+#  ª
 

@@ -3,7 +3,25 @@ mp_d_money: morph_d_money {
     label = "$ €";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp DLLR>, <&kp RC(N5)>;
+    bindings = <&kp DLLR>, <&kp LC(N5)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_d_lb: morph_d_left_brackets {
+    compatible = "zmk,behavior-mod-morph";
+    label = "[ «";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp LBKT>, <&kp LC(LBKT)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_r_lb: morph_d_right_brackets {
+    compatible = "zmk,behavior-mod-morph";
+    label = "] »";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp RBKT>, <&kp LC(RBKT)>;
     keep-mods = <(MOD_LALT)>;
 };
 

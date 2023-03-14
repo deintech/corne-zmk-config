@@ -98,15 +98,15 @@
         };
 
         dev_layer {
-            #define D13  &hm_d_lcmd LCMD    0
-            #define D14  &hm        LCTRL   LBRC
-            #define D15  &hm        LALT    RBRC
-            #define D16  &hm_d_lshf LSHFT   0
+            #define D13  &hm_d_lcmd  LCMD    0
+            #define D14  &hm         LCTRL   LBRC
+            #define D15  &hm         LALT    RBRC
+            #define D16  &hm_d_lshf  LSHFT   0
 
-            #define D19  &hm_d_rshf RSHFT   0
-            #define D20  &hm        LALT    LBKT
-            #define D21  &hm        RCTRL   RBKT
-            #define D22  &hm_d_rcmd RCMD    0
+            #define D19  &hm_d_rshf  RSHFT   0
+            #define D20  &hm_d_ralt  LALT    0
+            #define D21  &hm_d_rctrl RCTRL   0
+            #define D22  &hm_d_rcmd  RCMD    0
 
             #define D38  &mo_AXNDEV_to_BAS  0 0
             #define D39  &mo_AXNDEV_to_AXN  0 0

@@ -22,7 +22,7 @@ m_i_c: macro_int_caret {
         <&kp CARET &kp SPACE>;
 };
 
-m_i_d: macro_int_doublequote {
+m_i_d: macro_int_double_quote {
     compatible = "zmk,behavior-macro";
     label = "''";
     #binding-cells = <0>;
@@ -30,7 +30,7 @@ m_i_d: macro_int_doublequote {
         <&kp DQT &kp SPACE>;
 };
 
-m_i_s: macro_int_singlequote {
+m_i_s: macro_int_single_quote {
     compatible = "zmk,behavior-macro";
     label = "'";
     #binding-cells = <0>;

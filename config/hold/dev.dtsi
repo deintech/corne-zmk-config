@@ -25,6 +25,24 @@ hm_d_rshf: behavior_dev_rshf {
     bindings = <&kp>, <&mp_d_es>;
 };
 
+hm_d_ralt: behavior_dev_ralt {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_d_ralt";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_d_lb>;
+};
+
+hm_d_rctrl: behavior_dev_rctrl {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_d_rctrl";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_r_lb>;
+};
+
 hm_d_rcmd: behavior_dev_rcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_rcmd";

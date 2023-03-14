@@ -3,7 +3,7 @@ mp_i_a: morph_a {
     label = "a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp A>, <&kp RC(A)>;
+    bindings = <&kp A>, <&kp LC(A)>;
     keep-mods = <(MOD_LALT)>;
 };
 
