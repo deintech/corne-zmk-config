@@ -37,19 +37,3 @@ m_i_s: macro_int_singlequote {
     bindings =
         <&kp SQT &kp SPACE>;
 };
-
-m_i_a: macro_int_a {
-    compatible = "zmk,behavior-macro";
-    label = "a";
-    #binding-cells = <0>;
-    bindings =
-        <&kp SQT &kp A>;
-};
-
-m_i_e: macro_int_e {
-    compatible = "zmk,behavior-macro";
-    label = "e";
-    #binding-cells = <0>;
-    bindings =
-        <&kp SQT &kp E>;
-};
