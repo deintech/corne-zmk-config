@@ -77,7 +77,7 @@
             #define B16  &hm LSHFT   T
 
             #define B19  &hm_b_rshf  RSHFT  0  //N
-            #define B20  &hm_b_ralt  LALT   0  //E
+            #define B20  &hm_b_ralt  RALT   0  //E
             #define B21  &hm_b_rctrl RCTRL  0  //I
             #define B22  &hm_b_rcmd  RCMD   0  //O
 
@@ -104,7 +104,7 @@
             #define D16  &hm_d_lshf LSHFT   0
 
             #define D19  &hm_d_rshf RSHFT   0
-            #define D20  &hm        LALT    LBKT
+            #define D20  &hm        RALT    LBKT
             #define D21  &hm        RCTRL   RBKT
             #define D22  &hm_d_rcmd RCMD    0
 
@@ -129,9 +129,9 @@
             #define A16  &hm LSHFT  RIGHT
             #define A17  &kp LG(E)               // tap: file explorer
 
-            #define A19  &hm RSHFT  N4
+            #define A19  &hm LSHFT  N4
             #define A20  &hm LALT   N5
-            #define A21  &hm RCTRL  N6
+            #define A21  &hm LCTRL  N6
             #define A22  &hm RCMD   EQUAL
 
             #define A35 &mo_FNKAXN_to_FNK    0 0
