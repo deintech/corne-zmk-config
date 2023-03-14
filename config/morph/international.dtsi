@@ -3,7 +3,7 @@ mp_i_a: morph_a {
     label = "a";
     #binding-cells = <0>;
     mods = <(MOD_RALT)>;
-    bindings = <&kp A>, <&kp RC(RA(A))>;
+    bindings = <&kp A>, <&kp SQT &kp A>;
 };
 
 mp_i_e: morph_e {
@@ -11,7 +11,7 @@ mp_i_e: morph_e {
     label = "e";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp E>, <&kp RC(RA(E))>;
+    bindings = <&kp E>, <&kp SQT &kp E>;
 };
 
 mp_i_i: morph_i {
