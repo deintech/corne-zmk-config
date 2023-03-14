@@ -11,7 +11,7 @@ mp_i_e: morph_e {
     label = "e";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp E>, <&kp RC(RA(E))>;
+    bindings = <&kp E>, <&kp LC(LA(E))>;
 };
 
 mp_i_i: morph_i {
