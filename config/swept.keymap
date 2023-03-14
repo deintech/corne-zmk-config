@@ -129,9 +129,9 @@
             #define A16  &hm LSHFT  RIGHT
             #define A17  &kp LG(E)               // tap: file explorer
 
-            #define A19  &hm RSHFT  N4
-            #define A20  &hm RALT   N5
-            #define A21  &hm RCTRL  N6
+            #define A19  &hm LSHFT  N4
+            #define A20  &hm LALT   N5
+            #define A21  &hm LCTRL  N6
             #define A22  &hm RCMD   EQUAL
 
             #define A35 &mo_FNKAXN_to_FNK    0 0
@@ -183,7 +183,7 @@
 
             #define S22  &kp RG(PAUSE_BREAK)  // tap: system info
             #define S23  &kp RG(I)            // tap: windows settings
-            #define S34  &kp RC(RA(DEL))      // tap: windows security
+            #define S34  &kp LC(LA(DEL))      // tap: windows security
 
             #define S05  &kp RC(PLUS)         // tap: zoom in
             #define S17  &kp RC(N0)           // tap: zoom reset

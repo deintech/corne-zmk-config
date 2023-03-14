@@ -3,7 +3,7 @@ mp_i_a: morph_a {
     label = "a";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp A>, <&kp RC(RA(A))>;
+    bindings = <&kp A>, <&kp RA(A)>;
 };
 
 mp_i_e: morph_e {
@@ -11,7 +11,7 @@ mp_i_e: morph_e {
     label = "e";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp E>, <&kp LC(LA(E))>;
+    bindings = <&kp E>, <&kp RA(E)>;
 };
 
 mp_i_i: morph_i {
@@ -19,7 +19,7 @@ mp_i_i: morph_i {
     label = "i";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp I>, <&kp LC(LA(I))>;
+    bindings = <&kp I>, <&kp RA(I)>;
 };
 
 mp_i_o: morph_o {
@@ -27,7 +27,7 @@ mp_i_o: morph_o {
     label = "o";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp O>, <&kp LC(LA(O))>;
+    bindings = <&kp O>, <&kp RA(O)>;
 };
 
 mp_i_u: morph_u {
@@ -35,7 +35,7 @@ mp_i_u: morph_u {
     label = "u";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp U>, <&kp LC(LA(U))>;
+    bindings = <&kp U>, <&kp RA(U)>;
 };
 
 mp_i_n: morph_n {
@@ -43,7 +43,7 @@ mp_i_n: morph_n {
     label = "n";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp N>, <&kp LC(LA(N))>;
+    bindings = <&kp N>, <&kp RA(N)>;
 };
 
 mp_i_y: morph_y {
@@ -51,5 +51,5 @@ mp_i_y: morph_y {
     label = "y";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp Y>, <&kp LC(LA(Y))>;
+    bindings = <&kp Y>, <&kp RA(Y)>;
 };
