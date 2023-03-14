@@ -5,7 +5,7 @@ mp_i_a: morph_a {
     mods = <(MOD_RALT)>;
     bindings = <&kp A>, <&m_i_a>;
 };
-aaa'
+
 mp_i_e: morph_e {
     compatible = "zmk,behavior-mod-morph";
     label = "e";
