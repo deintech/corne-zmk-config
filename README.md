@@ -86,7 +86,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 ##### Spanish
 
 | Label        | Windows                                 | Android                                               |
-| :----------: | --------------------------------------: | ----------------------------------------------------: |
+| :----------: | --------------------------------------: | :---------------------------------------------------- |
 | <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>a</kbd>              |
 | <kbd>Á</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>a</kbd> |
 | <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>e</kbd>              |

@@ -3,7 +3,8 @@ hm_b_lcmd: behavior_base_lcmd {
     label = "hm_b_lcmd";
     #binding-cells = <2>;
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <400>;
+    quick-tap-ms = <200>;
     bindings = <&kp>, <&mp_i_a>;
 };
 
@@ -12,7 +13,8 @@ hm_b_rshf: behavior_base_rshf {
     label = "hm_b_rshf";
     #binding-cells = <2>;
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <400>;
+    quick-tap-ms = <200>;
     bindings = <&kp>, <&mp_i_n>;
 };
 
@@ -21,7 +23,8 @@ hm_b_ralt: behavior_base_ralt {
     label = "hm_b_ralt";
     #binding-cells = <2>;
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <400>;
+    quick-tap-ms = <200>;
     bindings = <&kp>, <&mp_i_e>;
 };
 
@@ -30,7 +33,8 @@ hm_b_rctrl: behavior_base_rctrl {
     label = "hm_b_rctrl";
     #binding-cells = <2>;
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <400>;
+    quick-tap-ms = <200>;
     bindings = <&kp>, <&mp_i_i>;
 };
 
@@ -39,6 +43,7 @@ hm_b_rcmd: behavior_base_rcmd {
     label = "hm_b_rcmd";
     #binding-cells = <2>;
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <400>;
+    quick-tap-ms = <200>;
     bindings = <&kp>, <&mp_i_o>;
 };
