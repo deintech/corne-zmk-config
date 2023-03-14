@@ -3,7 +3,8 @@ mp_i_a: morph_a {
     label = "a";
     #binding-cells = <0>;
     mods = <(MOD_RALT)>;
-    bindings = <&kp A>, <&kp RC(RA(A))>;
+    bindings = <&kp A>, <&kp RC(A)>;
+    keep-mods = <(MOD_RALT)>;
 };
 
 mp_i_e: morph_e {
@@ -11,7 +12,8 @@ mp_i_e: morph_e {
     label = "e";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp E>, <&kp LC(LA(E))>;
+    bindings = <&kp E>, <&kp LC(E)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
 mp_i_i: morph_i {
@@ -19,7 +21,7 @@ mp_i_i: morph_i {
     label = "i";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp I>, <&kp LC(LA(I))>;
+    bindings = <&kp I>, <&kp LC(I)>;
 };
 
 mp_i_o: morph_o {
