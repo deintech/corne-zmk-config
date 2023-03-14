@@ -2,7 +2,7 @@ mp_d_money: morph_d_money {
     compatible = "zmk,behavior-mod-morph";
     label = "$ €";
     #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LALT)>;
     bindings = <&kp DLLR>, <&kp RA(N5)>;
 };
 
