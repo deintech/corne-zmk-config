@@ -38,6 +38,14 @@ mp_i_u: morph_u {
     bindings = <&kp U>, <&kp LC(U)>;
 };
 
+mp_i_n: morph_n {
+    compatible = "zmk,behavior-mod-morph";
+    label = "n";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT|MOD_RALT)>;
+    bindings = <&kp N>, <&kp LC(N)>;
+};
+
 mp_i_y: morph_y {
     compatible = "zmk,behavior-mod-morph";
     label = "y";
