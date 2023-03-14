@@ -2,7 +2,7 @@ hm_d_lcmd: behavior_dev_lcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_lcmd";
     #binding-cells = <2>;
-    flavor = "hold-preferred";
+    flavor = "tap-unless-interrupted";
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_d_lao>;
 };
