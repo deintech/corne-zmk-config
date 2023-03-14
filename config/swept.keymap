@@ -113,10 +113,10 @@
 
             label = "DEV";
             bindings = <
-    KEY_ESC     &kp AT  &kp POUND  &morph_d_money  &mp_d_p     &m_i_d             &m_i_t   &mp_d_m  &kp UNDER  &kp PRCNT     &m_i_c    NAV_DEL
-     &mp_bc        D13        D14             D15      D16     &m_i_s             &m_i_g       D19        D20        D21        D22   NAV_BSPC
-    KEY_TAB  &kp LC(R)   &kp LPAR        &kp RPAR  &mp_d_a   &kp BSLH            &mp_d_s  &mp_d_qs     &kp LT     &kp GT   &mp_d_ql    &kp F12
-                                           &mp_cs  KEY_SPC        D38                D39   KEY_RET     &mp_dc
+    KEY_ESC     &kp AT  &kp POUND  &mp_d_money  &mp_d_p     &m_i_d             &m_i_t   &mp_d_m  &kp UNDER  &kp PRCNT     &m_i_c    NAV_DEL
+     &mp_bc        D13        D14          D15      D16     &m_i_s             &m_i_g       D19        D20        D21        D22   NAV_BSPC
+    KEY_TAB  &kp LC(R)   &kp LPAR     &kp RPAR  &mp_d_a   &kp BSLH            &mp_d_s  &mp_d_qs     &kp LT     &kp GT   &mp_d_ql    &kp F12
+                                        &mp_cs  KEY_SPC        D38                D39   KEY_RET     &mp_dc
             >;
         };
 
