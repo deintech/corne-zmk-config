@@ -49,6 +49,7 @@
         #include "morph/dev.dtsi"
 
         #include "hold/shared.dtsi"
+        #include "hold/base.dtsi"
         #include "hold/dev.dtsi"
     };
 
