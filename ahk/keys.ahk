@@ -13,7 +13,6 @@
 #^+.::Send("{U+00BB}")                   ; Win+Ctrl+>  »
  ^+3::Send("{U+00B0}")                   ;     Ctrl+#  °
 #^+3::Send("{U+00AA}")                   ; Win+Ctrl+#  ª
- !+4::Send("{U+20AC}")                   ;      Alt+$  €
 
 ; Actions
  !^f::Send("^{h}")                       ;       Alt+☉  ☊
