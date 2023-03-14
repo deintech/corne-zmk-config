@@ -118,11 +118,10 @@ Symbols and dev shortcuts for JS/TS.
 
 | Label           | Windows                                   |
 | :-------------: | ----------------------------------------: |
-| <kbd>°</kbd>    | <kbd>^</kbd>+<kbd>#</kbd>                 |
-| <kbd>ª</kbd>    | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>#</kbd>   |
+| <kbd>°</kbd>    | <kbd>⌥</kbd>+<kbd>#</kbd>                |
 | <kbd>€</kbd>    | <kbd>⌥</kbd>+<kbd>$</kbd>                |
-| <kbd>«</kbd>    | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd><</kbd>   |
-| <kbd>»</kbd>    | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>></kbd>   |
+| <kbd>«</kbd>    | <kbd>⌥</kbd>+<kbd>[</kbd>                |
+| <kbd>»</kbd>    | <kbd>⌥</kbd>+<kbd>]</kbd>                |
 | <kbd><=</kbd>   | <kbd>⌥</kbd>+<kbd><</kbd>                |
 | <kbd>>=</kbd>   | <kbd>⌥</kbd>+<kbd>></kbd>                |
 | <kbd>¡</kbd>    | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>!</kbd>   |
