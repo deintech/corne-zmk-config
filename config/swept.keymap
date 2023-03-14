@@ -43,13 +43,11 @@
         #include "morph/shared.dtsi"
 
         #include "morph/base.dtsi"
-        #include "morph/international.dtsi"
         #include "morph/actions.dtsi"
         #include "morph/num.dtsi"
         #include "morph/dev.dtsi"
 
         #include "hold/shared.dtsi"
-        #include "hold/base.dtsi"
         #include "hold/dev.dtsi"
     };
 
@@ -71,15 +69,15 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            #define B13  &hm_b_lcmd  LCMD   0  //A
-            #define B14  &hm LCTRL   R
-            #define B15  &hm LALT    S
-            #define B16  &hm LSHFT   T
+            #define B13  &hm LCMD   A
+            #define B14  &hm LCTRL  R
+            #define B15  &hm LALT   S
+            #define B16  &hm LSHFT  T
 
-            #define B19  &hm_b_rshf  RSHFT  0  //N
-            #define B20  &hm_b_ralt  RALT   0  //E
-            #define B21  &hm_b_rctrl RCTRL  0  //I
-            #define B22  &hm_b_rcmd  RCMD   0  //O
+            #define B19  &hm RSHFT  N
+            #define B20  &hm RALT   E
+            #define B21  &hm RCTRL  I
+            #define B22  &hm RCMD   O
 
             #define B35  &mp_stg
 
@@ -90,10 +88,10 @@
 
             label = "BAS";
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_i_u  &mp_i_y  &mp_k_m    NAV_DEL
-     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19      B20      B21      B22   NAV_BSPC
-    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H   &mp_cs   &mp_dc   &mp_kq        B35
-                             B36  KEY_SPC    B38               B39  KEY_RET      B41
+        KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L   &kp U   &kp Y  &mp_k_m    NAV_DEL
+         &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19     B20     B21      B22   NAV_BSPC
+        KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_cs  &mp_dc   &mp_kq        B35
+                                 B36  KEY_SPC    B38               B39  KEY_RET     B41
             >;
         };
 
