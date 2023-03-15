@@ -123,9 +123,10 @@ m_d_si: macro_strict_inequality {
     compatible = "zmk,behavior-macro";
     label = "!==";
     #binding-cells = <0>;
-    bindings =
-        <&macro_press &kp LSHFT>,
-        <&macro_tap &kp EXCL>,
-        <&macro_release &kp LSHFT>,
-        <&kp EQUAL &kp EQUAL>;
+    bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp EXCL>
+        , <&macro_pause_for_release>
+        , <&macro_release &kp LSHFT>
+        , <&kp EQUAL &kp EQUAL>;
 };
