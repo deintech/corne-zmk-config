@@ -10,7 +10,7 @@ m_d_ma: macro_dev_multiplication_assignment {
     compatible = "zmk,behavior-macro";
     label = "*=";
     #binding-cells = <0>;
-    bindings =
+    bindings
         = <&macro_wait_time 500>
         , <&kp ASTRK &kp EQUAL>;
 };
@@ -27,7 +27,7 @@ m_d_as: macro_dev_addition_assignment {
     compatible = "zmk,behavior-macro";
     label = "+=";
     #binding-cells = <0>;
-    bindings =
+    bindings
         = <&macro_wait_time 500>
         , <&kp PLUS &kp EQUAL>;
 };
@@ -44,7 +44,7 @@ m_d_sa: macro_dev_subtraction_assignment {
     compatible = "zmk,behavior-macro";
     label = "-=";
     #binding-cells = <0>;
-    bindings =
+    bindings
         = <&macro_wait_time 500>
         , <&kp MINUS &kp EQUAL>;
 };
@@ -69,7 +69,7 @@ m_d_laa: macro_dev_logical_and_assignment {
     compatible = "zmk,behavior-macro";
     label = "&&=";
     #binding-cells = <0>;
-    bindings =
+    bindings
         = <&macro_wait_time 500>
         , <&kp AMPS &kp AMPS &kp EQUAL>;
 };
@@ -111,7 +111,7 @@ m_d_nca: macro_nullish_coalescing_assignment {
     compatible = "zmk,behavior-macro";
     label = "??=";
     #binding-cells = <0>;
-    bindings =
+    bindings
         = <&macro_wait_time 500>
         , <&kp QMARK &kp QMARK &kp EQUAL>;
 };
