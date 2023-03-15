@@ -13,7 +13,7 @@ hm_d_lshf: behavior_dev_lshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_lshf";
     #binding-cells = <2>;
-    flavor = "tap-preferred";
+    flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <125>;
     global-quick-tap;
@@ -24,7 +24,7 @@ hm_d_rshf: behavior_dev_rshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_rshf";
     #binding-cells = <2>;
-    flavor = "tap-preferred";
+    flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <125>;
     global-quick-tap;

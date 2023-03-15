@@ -117,7 +117,7 @@ mp_d_es_a: morph_dev_exclamation_symbol_alt {
     label = "! ¡";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp EXCL>, <&kp LC(EXCL)>;
+    bindings = <&kp EXCL>, <&kp LC(N1)>;
     keep-mods = <(MOD_LALT)>;
 };
 mp_d_es: morph_dev_exclamation_symbol {
