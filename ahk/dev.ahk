@@ -6,6 +6,7 @@
 
 ; Dev
 #HotIf (WinActive("ahk_exe code.exe") || WinActive("ahk_exe edge.exe"))
+    !+=::Send("{U+002B}{U+003D}")                       ;       Alt++  +=      Addition Assignment
     !-::Send("{U+002D}{U+003D}")                        ;       Alt+-  -=      Subtraction Assignment
     !+8::Send("{U+002A}{U+003D}")                       ;       Alt+*  *=      Multiply Assignment
     !/::Send("{U+002F}{U+003D}")                        ;       Alt+/  /=      Division Assignment
