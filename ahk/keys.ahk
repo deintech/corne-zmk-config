@@ -5,7 +5,6 @@
 ; # Win
 
 ; Symbols
-#!+/::Send("{U+00BF}")                   ;  Win+Alt+?  ¿
 #^+/::Send("{U+00BF}{U+003F}{left 1}")   ; Win+Ctrl+?  ¿?
 #!+1::Send("{U+00A1}")                   ;  Win+Alt+!  ¡
 #^+1::Send("{U+00A1}{U+0021}{left 1}")   ; Win+Ctrl+!  ¡!

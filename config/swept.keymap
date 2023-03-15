@@ -123,7 +123,7 @@
         act_num_layer {
             #define A01  &kp LG(LS(C))           // tap: color picker
             #define A05  &kp LC(F)               // tap: find
-            #define A13  &hm LCMD   LG(LS(S))    //tap: printscreen
+            #define A13  &hm LCMD   LG(LS(S))    // tap: printscreen
             #define A14  &hm LCTRL  LEFT
             #define A15  &hm LALT   DOWN
             #define A16  &hm LSHFT  RIGHT

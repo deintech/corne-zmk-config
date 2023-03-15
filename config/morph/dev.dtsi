@@ -1,4 +1,4 @@
-mp_d_pound: morph_d_pound {
+mp_d_pound: morph_dev_pound {
     compatible = "zmk,behavior-mod-morph";
     label = "# °";
     #binding-cells = <0>;
@@ -6,8 +6,8 @@ mp_d_pound: morph_d_pound {
     bindings = <&kp POUND>, <&kp LC(LS(SEMICOLON))>;
     keep-mods = <(MOD_LALT)>;
 };
-##€Ç#ÇÇÇÇ
-mp_d_money: morph_d_money {
+
+mp_d_money: morph_dev_money {
     compatible = "zmk,behavior-mod-morph";
     label = "$ €";
     #binding-cells = <0>;
@@ -16,7 +16,7 @@ mp_d_money: morph_d_money {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_d_lb: morph_d_left_brackets {
+mp_d_lb: morph_dev_left_brackets {
     compatible = "zmk,behavior-mod-morph";
     label = "[ «";
     #binding-cells = <0>;
@@ -25,7 +25,7 @@ mp_d_lb: morph_d_left_brackets {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_r_lb: morph_d_right_brackets {
+mp_r_lb: morph_dev_right_brackets {
     compatible = "zmk,behavior-mod-morph";
     label = "] »";
     #binding-cells = <0>;
@@ -90,12 +90,32 @@ mp_d_loo: morph_dev_logical_or_operator {
     bindings = <&kp PIPE>, <&m_d_lo>;
 };
 
+// tap:         ?
+// shift:       ??=
+// alt:         ¿
+// alt + shift: ??
+mp_d_qs_alt_shift: morph_dev_question_symbol_alt_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "¿ ??";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT)>;
+    bindings = &kp LC(FSLH)>, <&m_d_nco>;
+    keep-mods = <(MOD_LSFT)>;
+};
+mp_d_qs_alt: morph_dev_question_symbol_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "? ¿";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp QMARK>, <&mp_d_qs_alt_shift>;
+    keep-mods = <(MOD_LALT)>;
+};
 mp_d_qs: morph_dev_question_symbol {
     compatible = "zmk,behavior-mod-morph";
-    label = "? ??";
+    label = "? ??=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp QMARK>, <&m_d_nco>;
+    bindings = <&mp_d_qs_alt>, <&m_d_nca>;
 };
 
 mp_d_es: morph_dev_exclamation_symbol {
