@@ -49,9 +49,9 @@ mp_d_p_a: morph_dev_plus_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "+ ++";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT)>;
     bindings = <&kp PLUS>, <&m_d_io>;
-    keep-mods = <(MOD_LALT)>;
+    keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT)>;
 };
 mp_d_p: morph_dev_plus {
     compatible = "zmk,behavior-mod-morph";
