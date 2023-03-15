@@ -11,7 +11,7 @@ m_d_ma: macro_dev_multiplication_assignment {
     label = "*=";
     #binding-cells = <0>;
     bindings
-        = <&macro_wait_time 200>
+        = <&macro_wait_time 400>
         , <&kp ASTRK &kp EQUAL>;
 };
 
@@ -28,7 +28,7 @@ m_d_as: macro_dev_addition_assignment {
     label = "+=";
     #binding-cells = <0>;
     bindings
-        = <&macro_wait_time 200>
+        = <&macro_wait_time 400>
         , <&kp PLUS &kp EQUAL>;
 };
 
@@ -45,7 +45,7 @@ m_d_sa: macro_dev_subtraction_assignment {
     label = "-=";
     #binding-cells = <0>;
     bindings
-        = <&macro_wait_time 200>
+        = <&macro_wait_time 400>
         , <&kp MINUS &kp EQUAL>;
 };
 
@@ -70,7 +70,7 @@ m_d_laa: macro_dev_logical_and_assignment {
     label = "&&=";
     #binding-cells = <0>;
     bindings
-        = <&macro_wait_time 200>
+        = <&macro_wait_time 400>
         , <&kp AMPS &kp AMPS &kp EQUAL>;
 };
 
@@ -112,7 +112,7 @@ m_d_nca: macro_nullish_coalescing_assignment {
     label = "??=";
     #binding-cells = <0>;
     bindings
-        = <&macro_wait_time 200>
+        = <&macro_wait_time 400>
         , <&kp QMARK &kp QMARK &kp EQUAL>;
 };
 
@@ -129,8 +129,8 @@ m_d_se: macro_strict_equality {
     label = "!==";
     #binding-cells = <0>;
     bindings
-        = <&macro_wait_time 200>
-        , <&kp EQUAL &kp EQUAL &kp EQUAL>;
+        = <&macro_wait_time 400>
+        , <&kp EXCL &kp EQUAL &kp EQUAL>;
 };
 
 m_d_si: macro_strict_inequality {
@@ -138,6 +138,6 @@ m_d_si: macro_strict_inequality {
     label = "!==";
     #binding-cells = <0>;
     bindings
-        = <&macro_wait_time 200>
-        , <&kp EXCL &kp EQUAL &kp EQUAL>;
+        = <&macro_wait_time 400>
+        , <&kp EQUAL &kp EQUAL &kp EQUAL>;
 };
