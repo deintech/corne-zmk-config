@@ -56,7 +56,7 @@ mp_d_p: morph_dev_plus {
     compatible = "zmk,behavior-mod-morph";
     label = "+ ++";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT)>;
     bindings = <&mp_d_p_s>, <&m_d_io>;
     keep-mods = <(MOD_LALT)>;
 };
