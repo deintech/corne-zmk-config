@@ -5,6 +5,7 @@ hm_b_lcmd: behavior_base_lcmd {
     flavor = "hold-preferred";
     tapping-term-ms = <400>;
     quick-tap-ms = <200>;
+    global-quick-tap;
     bindings = <&kp>, <&mp_i_a>;
 };
 
@@ -15,6 +16,7 @@ hm_b_rshf: behavior_base_rshf {
     flavor = "hold-preferred";
     tapping-term-ms = <400>;
     quick-tap-ms = <200>;
+    global-quick-tap;
     bindings = <&kp>, <&mp_i_n>;
 };
 
@@ -25,6 +27,7 @@ hm_b_ralt: behavior_base_ralt {
     flavor = "hold-preferred";
     tapping-term-ms = <400>;
     quick-tap-ms = <200>;
+    global-quick-tap;
     bindings = <&kp>, <&mp_i_e>;
 };
 
@@ -35,6 +38,7 @@ hm_b_rctrl: behavior_base_rctrl {
     flavor = "hold-preferred";
     tapping-term-ms = <400>;
     quick-tap-ms = <200>;
+    global-quick-tap;
     bindings = <&kp>, <&mp_i_i>;
 };
 
@@ -45,5 +49,6 @@ hm_b_rcmd: behavior_base_rcmd {
     flavor = "hold-preferred";
     tapping-term-ms = <400>;
     quick-tap-ms = <200>;
+    global-quick-tap;
     bindings = <&kp>, <&mp_i_o>;
 };
