@@ -94,20 +94,19 @@ mp_d_loo: morph_dev_logical_or_operator {
 // shift:       ??=
 // alt:         ¿
 // alt + shift: ??
-// mp_d_qs_alt_shift: morph_dev_question_symbol_alt_shift {
-//     compatible = "zmk,behavior-mod-morph";
-//     label = "¿ ??";
-//     #binding-cells = <0>;
-//     mods = <(MOD_LSFT)>;
-//     bindings = &kp LC(FSLH)>, <&m_d_nco>;
-//     keep-mods = <(MOD_LSFT)>;
-// };
-mp_d_qs_alt: morph_dev_question_symbol_alt {
+mp_d_qs_as: morph_dev_question_symbol_alt_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "¿ ??";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT)>;
+    bindings = <&kp LC(FSLH)>, <&m_d_nco>;
+};
+mp_d_qs_a: morph_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "? ¿";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp QMARK>, <&kp LC(FSLH)>;
+    bindings = <&kp QMARK>, <&mp_d_qs_as>;
     keep-mods = <(MOD_LALT)>;
 };
 mp_d_qs: morph_dev_question_symbol {
@@ -115,7 +114,7 @@ mp_d_qs: morph_dev_question_symbol {
     label = "? ??=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_qs_alt>, <&m_d_nca>;
+    bindings = <&mp_d_qs_a>, <&m_d_nca>;
 };
 
 mp_d_es: morph_dev_exclamation_symbol {
