@@ -124,5 +124,8 @@ m_d_si: macro_strict_inequality {
     label = "!==";
     #binding-cells = <0>;
     bindings =
-        <&kp EXCL &kp EQUAL &kp EQUAL>;
+        <&macro_press &kp LSHFT>,
+        <&macro_tap &kp EXCL>,
+        <&macro_release &kp LSHFT>,
+        <&kp EQUAL &kp EQUAL>;
 };
