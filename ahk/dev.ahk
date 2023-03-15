@@ -8,7 +8,6 @@
 #HotIf (WinActive("ahk_exe code.exe") || WinActive("ahk_exe edge.exe"))
     !+8::Send("{U+002A}{U+003D}")                       ;       Alt+*  *=      Multiply Assignment
     !/::Send("{U+002F}{U+003D}")                        ;       Alt+/  /=      Division Assignment
-    !=::Send("{U+003D}{U+003D}{U+003D}")                ;       Alt+=  ===     Strict Equality
     !+\::Send("{U+007C}{U+007C}{U+003D}")               ;       Alt+|  ||=     Logical OR Assignment
     !+,::Send("{U+003C}{U+003D}")                       ;       Alt+<  <=      Less than or equal to
     #!+,::Send("{U+003C}{U+002F}{U+003E}{left 2}")      ;   Win+Alt+<  <░/>    HTML Void Tag
