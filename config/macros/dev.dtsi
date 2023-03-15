@@ -11,7 +11,8 @@ m_d_ma: macro_dev_multiplication_assignment {
     label = "*=";
     #binding-cells = <0>;
     bindings =
-        <&kp ASTRK &kp EQUAL>;
+        = <&macro_wait_time 500>
+        , <&kp ASTRK &kp EQUAL>;
 };
 
 m_d_io: macro_dev_increment_operator {
@@ -27,7 +28,8 @@ m_d_as: macro_dev_addition_assignment {
     label = "+=";
     #binding-cells = <0>;
     bindings =
-        <&kp PLUS &kp EQUAL>;
+        = <&macro_wait_time 500>
+        , <&kp PLUS &kp EQUAL>;
 };
 
 m_d_do: macro_dev_decrement_operator {
@@ -43,7 +45,8 @@ m_d_sa: macro_dev_subtraction_assignment {
     label = "-=";
     #binding-cells = <0>;
     bindings =
-        <&kp MINUS &kp EQUAL>;
+        = <&macro_wait_time 500>
+        , <&kp MINUS &kp EQUAL>;
 };
 
 m_d_a: macro_dev_arrow {
@@ -67,7 +70,8 @@ m_d_laa: macro_dev_logical_and_assignment {
     label = "&&=";
     #binding-cells = <0>;
     bindings =
-        <&kp AMPS &kp AMPS &kp EQUAL>;
+        = <&macro_wait_time 500>
+        , <&kp AMPS &kp AMPS &kp EQUAL>;
 };
 
 m_d_lo: macro_dev_logical_or {
@@ -108,7 +112,8 @@ m_d_nca: macro_nullish_coalescing_assignment {
     label = "??=";
     #binding-cells = <0>;
     bindings =
-        <&kp QMARK &kp QMARK &kp EQUAL>;
+        = <&macro_wait_time 500>
+        , <&kp QMARK &kp QMARK &kp EQUAL>;
 };
 
 m_d_bo: macro_boolean_operator {
@@ -124,9 +129,6 @@ m_d_si: macro_strict_inequality {
     label = "!==";
     #binding-cells = <0>;
     bindings
-        = <&macro_press &kp LSHFT>
-        , <&macro_tap &kp EXCL>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp LSHFT>
-        , <&kp EQUAL &kp EQUAL>;
+        = <&macro_wait_time 500>
+        , <&kp EXCL &kp EQUAL &kp EQUAL>;
 };
