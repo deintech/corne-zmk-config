@@ -52,10 +52,10 @@ mp_d_p: morph_dev_plus {
 
 mp_d_m: morph_dev_minus {
     compatible = "zmk,behavior-mod-morph";
-    label = "- --";
+    label = "- -=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp MINUS>, <&m_d_do>;
+    bindings = <&kp MINUS>, <&m_d_sa>;
 };
 
 mp_d_e: morph_dev_equal {

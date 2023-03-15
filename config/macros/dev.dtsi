@@ -38,6 +38,14 @@ m_d_do: macro_dev_decrement_operator {
         <&kp MINUS &kp MINUS>;
 };
 
+m_d_sa: macro_dev_subtraction_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "-=";
+    #binding-cells = <0>;
+    bindings =
+        <&kp MINUS &kp EQUAL>;
+};
+
 m_d_a: macro_dev_arrow {
     compatible = "zmk,behavior-macro";
     label = "=>";
