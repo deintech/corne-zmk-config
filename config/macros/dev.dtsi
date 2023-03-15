@@ -62,6 +62,14 @@ m_d_la: macro_dev_logical_and {
         <&kp AMPS &kp AMPS>;
 };
 
+m_d_laa: macro_dev_logical_and_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "&&=";
+    #binding-cells = <0>;
+    bindings =
+        <&kp AMPS &kp AMPS &kp EQUAL>;
+};
+
 m_d_lo: macro_dev_logical_or {
     compatible = "zmk,behavior-macro";
     label = "||";
@@ -109,4 +117,12 @@ m_d_bo: macro_boolean_operator {
     #binding-cells = <0>;
     bindings =
         <&kp EXCL &kp EXCL>;
+};
+
+m_d_si: macro_strict_inequality {
+    compatible = "zmk,behavior-macro";
+    label = "!==";
+    #binding-cells = <0>;
+    bindings =
+        <&kp EXCL &kp EQUAL &kp EQUAL>;
 };

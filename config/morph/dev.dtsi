@@ -76,10 +76,10 @@ mp_d_s: morph_dev_slash {
 
 mp_d_lao: morph_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
-    label = "& &&";
+    label = "& &&=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp AMPS>, <&m_d_la>;
+    bindings = <&kp AMPS>, <&m_d_laa>;
 };
 
 mp_d_loo: morph_dev_logical_or_operator {
@@ -109,12 +109,23 @@ mp_d_qs: morph_dev_question_symbol {
     bindings = <&mp_d_qs_a>, <&m_d_nca>;
 };
 
+// tap:         !
+// shift:       !==
+// alt:         ¡
+mp_d_es_a: morph_dev_exclamation_symbol_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "! ¡";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp EXCL>, <&kp LC(EXCL)>;
+    keep-mods = <(MOD_LALT)>;
+};
 mp_d_es: morph_dev_exclamation_symbol {
     compatible = "zmk,behavior-mod-morph";
-    label = "! !!";
+    label = "! !==";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp EXCL>, <&m_d_bo>;
+    bindings = <&mp_d_es_a>, <&m_d_si>;
 };
 
 mp_d_ql: morph_dev_question_logical {
