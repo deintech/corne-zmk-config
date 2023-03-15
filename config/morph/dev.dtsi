@@ -42,12 +42,23 @@ mp_d_a: morph_dev_asterisk {
     bindings = <&kp ASTRK>, <&m_d_eo>;
 };
 
-mp_d_p: morph_dev_plus {
+// tap:     +
+// shift:   +=
+// alt:     ++
+mp_d_ps_a: morph_dev_plus_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "+ ++";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LALT)>;
     bindings = <&kp PLUS>, <&m_d_io>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_ps: morph_dev_plus_symbol {
+    compatible = "zmk,behavior-mod-morph";
+    label = "+ +=";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_ps_a>, <&m_d_as>;
 };
 
 mp_d_m: morph_dev_minus {
@@ -89,7 +100,7 @@ mp_d_loo: morph_dev_logical_or_operator {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp PIPE>, <&m_d_lo>;
 };
-
+???=
 // tap:         ?
 // shift:       ??=
 // alt:         ¿
@@ -98,7 +109,7 @@ mp_d_qs_as: morph_dev_question_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "¿ ??";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp LC(FSLH)>, <&m_d_nco>;
     keep-mods = <(MOD_LALT)>;
 };
