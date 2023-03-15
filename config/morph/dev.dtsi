@@ -3,10 +3,10 @@ mp_d_pound: morph_d_pound {
     label = "# °";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp POUND>, <&kp LC(LS(COMMA))>;
+    bindings = <&kp POUND>, <&kp LC(LS(SEMICOLON))>;
     keep-mods = <(MOD_LALT)>;
 };
-
+##€Ç#ÇÇÇÇ
 mp_d_money: morph_d_money {
     compatible = "zmk,behavior-mod-morph";
     label = "$ €";
