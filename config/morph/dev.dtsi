@@ -98,8 +98,9 @@ mp_d_qs_as: morph_dev_question_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "¿ ??";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp LC(FSLH)>, <&m_d_nco>;
+    keep-mods = <(MOD_LALT)>;
 };
 mp_d_qs_a: morph_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
