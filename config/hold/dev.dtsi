@@ -2,8 +2,9 @@ hm_d_lcmd: behavior_dev_lcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_lcmd";
     #binding-cells = <2>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&mp_d_lao>;
 };
@@ -12,8 +13,9 @@ hm_d_lshf: behavior_dev_lshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_lshf";
     #binding-cells = <2>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&mp_d_e>;
 };
@@ -22,8 +24,9 @@ hm_d_rshf: behavior_dev_rshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_rshf";
     #binding-cells = <2>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&mp_d_es>;
 };
@@ -32,8 +35,9 @@ hm_d_ralt: behavior_dev_ralt {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_ralt";
     #binding-cells = <2>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&mp_d_lb>;
 };
@@ -42,8 +46,9 @@ hm_d_rctrl: behavior_dev_rctrl {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_rctrl";
     #binding-cells = <2>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&mp_r_lb>;
 };
@@ -52,8 +57,9 @@ hm_d_rcmd: behavior_dev_rcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_d_rcmd";
     #binding-cells = <2>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&mp_d_loo>;
 };
