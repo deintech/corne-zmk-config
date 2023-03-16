@@ -66,7 +66,7 @@ mp_d_e: morph_dev_equal {
     compatible = "zmk,behavior-mod-morph";
     label = "= =>";
     #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp EQUAL>, <&m_d_a>;
 };
 // mp_d_e_a: morph_dev_equal_alt {
