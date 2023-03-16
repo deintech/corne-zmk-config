@@ -2,8 +2,9 @@ m_d_eo: macro_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
     label = "**";
     #binding-cells = <0>;
-    bindings =
-        <&kp ASTRK &kp ASTRK>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&kp ASTRK &kp ASTRK>;
 };
 
 m_d_ma: macro_dev_multiplication_assignment {
@@ -32,8 +33,9 @@ m_d_io: macro_dev_increment_operator {
     compatible = "zmk,behavior-macro";
     label = "++";
     #binding-cells = <0>;
-    bindings =
-        <&kp PLUS &kp PLUS>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&kp PLUS &kp PLUS>;
 };
 
 m_d_as: macro_dev_addition_assignment {
@@ -84,8 +86,9 @@ m_d_la: macro_dev_logical_and {
     compatible = "zmk,behavior-macro";
     label = "&&";
     #binding-cells = <0>;
-    bindings =
-        <&kp AMPS &kp AMPS>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&kp AMPS &kp AMPS>;
 };
 
 m_d_laa: macro_dev_logical_and_assignment {
@@ -103,8 +106,9 @@ m_d_lo: macro_dev_logical_or {
     compatible = "zmk,behavior-macro";
     label = "||";
     #binding-cells = <0>;
-    bindings =
-        <&kp PIPE &kp PIPE>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&kp PIPE &kp PIPE>;
 };
 
 m_d_loa: macro_dev_logical_or_assignment {
@@ -122,25 +126,26 @@ m_d_cto: macro_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
     label = "?░:░";
     #binding-cells = <0>;
-    bindings =
-        <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>,
-        <&kp LEFT &kp LEFT &kp LEFT>;
+    bindings
+        = <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>
+        , <&kp LEFT &kp LEFT &kp LEFT>;
 };
 
 m_d_oco: macro_optional_chaining_operator {
     compatible = "zmk,behavior-macro";
     label = "?.";
     #binding-cells = <0>;
-    bindings =
-        <&kp QMARK &kp DOT>;
+    bindings
+        = <&kp QMARK &kp DOT>;
 };
 
 m_d_nco: macro_nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
     label = "??";
     #binding-cells = <0>;
-    bindings =
-        <&kp QMARK &kp QMARK>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&kp QMARK &kp QMARK>;
 };
 
 m_d_nca: macro_nullish_coalescing_assignment {
@@ -152,14 +157,6 @@ m_d_nca: macro_nullish_coalescing_assignment {
         = <&none>
         , <&macro_wait_time 100>
         , <&kp QMARK &kp QMARK &kp EQUAL>;
-};
-
-m_d_bo: macro_boolean_operator {
-    compatible = "zmk,behavior-macro";
-    label = "!!";
-    #binding-cells = <0>;
-    bindings =
-        <&kp EXCL &kp EXCL>;
 };
 
 m_d_se: macro_strict_equality {
@@ -182,4 +179,46 @@ m_d_si: macro_strict_inequality {
         = <&none>
         , <&macro_wait_time 100>
         , <&kp EXCL &kp EQUAL &kp EQUAL>;
+};
+
+m_d_hvt: macro_dev_html_void_tag {
+    compatible = "zmk,behavior-macro";
+    label = "<░/>";
+    #binding-cells = <0>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&kp LT &kp FSLH &kp GT>
+        , <&kp LEFT &kp LEFT>;
+};
+
+m_d_ltoet: macro_dev_less_than_or_equal_to {
+    compatible = "zmk,behavior-macro";
+    label = "<=";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LT &kp EQUAL>;
+};
+
+m_d_hct: macro_dev_html_close_tag {
+    compatible = "zmk,behavior-macro";
+    label = "</░>";
+    #binding-cells = <0>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&kp LT &kp FSLH &kp GT>
+        , <&kp LEFT>;
+};
+
+m_d_gtoet: macro_dev_greater_than_or_equal_to {
+    compatible = "zmk,behavior-macro";
+    label = ">=";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp GT &kp EQUAL>;
 };
