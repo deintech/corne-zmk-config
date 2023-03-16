@@ -50,12 +50,23 @@ mp_d_p: morph_dev_plus {
     bindings = <&kp PLUS>, <&m_d_as>;
 };
 
+// tap:         -
+// shift:       -=
+// alt:         --
+mp_d_m_a: morph_dev_minus_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "- --";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp MINUS>, <&m_d_do>;
+    keep-mods = <(MOD_LALT)>;
+};
 mp_d_m: morph_dev_minus {
     compatible = "zmk,behavior-mod-morph";
     label = "- -=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp MINUS>, <&m_d_sa>;
+    bindings = <&mp_d_m_a>, <&m_d_sa>;
 };
 
 // tap:         =
