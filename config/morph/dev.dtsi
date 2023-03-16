@@ -74,7 +74,7 @@ mp_d_e: morph_dev_equal {
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&mp_d_e_s>, <&m_d_a>;
-    // keep-mods = <(MOD_LALT)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
 // tap:         /
