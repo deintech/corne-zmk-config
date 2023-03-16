@@ -37,7 +37,7 @@ mp_r_lb: morph_dev_right_brackets {
 // tap:         *
 // shift:       *=
 // alt:         **
-mp_d_a_a: morph_dev_asterisk {
+mp_d_a_a: morph_dev_asterisk_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "* **";
     #binding-cells = <0>;
@@ -130,12 +130,23 @@ mp_d_s: morph_dev_slash {
     keep-mods = <(MOD_LALT)>;
 };
 
+// tap:         &
+// shift:       &=
+// alt:         &&
+mp_d_lao_a: morph_dev_logical_and_operator_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "& &&";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp AMPS>, <&m_d_la>;
+    keep-mods = <(MOD_LALT)>;
+};
 mp_d_lao: morph_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
-    label = "& &&=";
+    label = "& &=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp AMPS>, <&m_d_laa>;
+    bindings = <&mp_d_lao_a>, <&m_d_laa>;
 };
 
 mp_d_loo: morph_dev_logical_or_operator {
