@@ -97,14 +97,6 @@ mp_d_s: morph_dev_question_symbol {
     bindings = <&mp_d_s_a>, <&m_d_da>;
 };
 
-mp_d_s: morph_dev_slash {
-    compatible = "zmk,behavior-mod-morph";
-    label = "/";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp FSLH>, <&kp LA(LS(A))>;
-};
-
 mp_d_lao: morph_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
     label = "& &&=";
