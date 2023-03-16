@@ -84,8 +84,8 @@
             #define B35  &mp_stg
 
             #define B36  &mo_DEVBAS_to_DEV  0 0
-            #define B38  &mo_AXNBAS_to_FNK  0 0
-            #define B39  &mo_AXNBAS_to_AXN  0 0
+            #define B38  &mo_AXNBAS_to_AXN  0 0
+            #define B39  &mo_AXNBAS_to_FNK  0 0
             #define B41  &mo_DEVBAS_to_DEV  0 0
 
             label = "BAS";
