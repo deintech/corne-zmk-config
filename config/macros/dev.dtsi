@@ -56,7 +56,7 @@ m_d_a: macro_dev_arrow {
     wait-ms = <40>;
     tap-ms = <40>;
     bindings
-        = <&macro_tap &kp EQUAL &kp GT>;
+        = <&kp EQUAL &kp GT>;
 };
 
 m_d_la: macro_dev_logical_and {
