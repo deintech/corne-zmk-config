@@ -56,7 +56,7 @@ m_d_a: macro_dev_arrow {
     bindings
         = <&macro_wait_time 400>
         , <&kp EQUAL>
-        , &kp GT;
+        , <&kp GT>;
 };
 
 m_d_la: macro_dev_logical_and {
