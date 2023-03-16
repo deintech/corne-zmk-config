@@ -6,7 +6,7 @@ ZMK configuration for [swept-crkbd](https://github.com/AYM1607/swept-crkbd/) als
 
 This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** layout), complemented with AHK scripts with Spanish accents, easy access to development symbols and JS/TS shortcuts.
 
-> **US International** layout is another alternative, but it has a critical downside (at least on Windows) for programming due to dead keys. We are going to lose speed because need to press two keys instead of one: the diacritic or accent followed by an ending character (space, tab or enter) to produce it.
+![US International](.github/images/layout/US-International.png)
 
 ---
 
