@@ -178,6 +178,7 @@
         };
 
         settings_layer {
+            #define S10  &kp LG(LS(GRAVE))    // tap: fancy zones
             #define S11  &kp LC(LS(ESC))      // tap: task manager
             #define S24  &kp LG(K)            // tap: connect quick action
 
@@ -191,9 +192,9 @@
 
             label = "STG";
             bindings = <
-       KEY_ESC  &none    &none    &none  &kp C_BRI_DN       S05          &kp C_VOL_UP  &kp C_BRI_UP       &none       &none  &none    S11
-    &bt BT_CLR  &none  &m_s_b1  &m_s_b2       &m_s_b3       S17            &kp C_MUTE    &kp C_PREV    &kp C_PP  &kp C_NEXT    S22    S23
-           S24  &none  &m_s_b4  &m_s_b5       &m_s_b6       S29          &kp C_VOL_DN      &kp C_RW  &kp C_STOP    &kp C_FF    S34  &none
+       KEY_ESC  &none    &none    &none  &kp C_BRI_DN       S05          &kp C_VOL_UP  &kp C_BRI_UP       &none       &none  S10    S11
+    &bt BT_CLR  &none  &m_s_b1  &m_s_b2       &m_s_b3       S17            &kp C_MUTE    &kp C_PREV    &kp C_PP  &kp C_NEXT  S22    S23
+           S24  &none  &m_s_b4  &m_s_b5       &m_s_b6       S29          &kp C_VOL_DN      &kp C_RW  &kp C_STOP    &kp C_FF  S34  &none
                                   &none       KEY_SPC   &to_BAS               &to_DEV       KEY_RET       &none
             >;
         };
