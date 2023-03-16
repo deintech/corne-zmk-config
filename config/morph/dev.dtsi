@@ -62,7 +62,7 @@ mp_d_m: morph_dev_minus {
 // tap:         =
 // shift:       ===
 // alt:         =>
-mp_d_e_a: morph_dev_equal_alt {
+mp_d_e: morph_dev_equal_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "= =>";
     #binding-cells = <0>;
@@ -70,7 +70,7 @@ mp_d_e_a: morph_dev_equal_alt {
     bindings = <&kp EQUAL>, <&m_d_a>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_e: morph_dev_equal {
+mp_d_e_s: morph_dev_equal {
     compatible = "zmk,behavior-mod-morph";
     label = "= ===";
     #binding-cells = <0>;
