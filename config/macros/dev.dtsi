@@ -66,8 +66,7 @@ m_d_a: macro_dev_arrow {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp EQUAL>
-        , <&kp GT>;
+        , <&kp EQUAL &kp GT>;
 };
 
 m_d_la: macro_dev_logical_and {
@@ -128,11 +127,10 @@ m_d_nca: macro_nullish_coalescing_assignment {
     label = "??=";
     #binding-cells = <0>;
     wait-ms = <400>;
-    tap-ms = <30>;
     bindings
-        = <&kp QMARK>
-        , <&macro_wait_time 30>
-        , <&kp QMARK &kp EQUAL>;
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp QMARK &kp QMARK &kp EQUAL>;
 };
 
 m_d_bo: macro_boolean_operator {
@@ -151,7 +149,7 @@ m_d_se: macro_strict_equality {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp EQUAL &kp EQUAL &kp EQUAL>
+        , <&kp EQUAL &kp EQUAL &kp EQUAL>;
 };
 
 m_d_si: macro_strict_inequality {
@@ -162,5 +160,5 @@ m_d_si: macro_strict_inequality {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp EXCL &kp EQUAL &kp EQUAL>
+        , <&kp EXCL &kp EQUAL &kp EQUAL>;
 };
