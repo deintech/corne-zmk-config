@@ -81,19 +81,19 @@ mp_d_e: morph_dev_equal {
 // shift:       /=
 // ctrl:        // line comment
 // alt:         /* block comment *
-mp_d_s_s: morph_dev_question_symbol {
-    compatible = "zmk,behavior-mod-morph";
-    label = "/ /=";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp FSLH>, <&m_d_da>;
-};
+// mp_d_s_s: morph_dev_question_symbol {
+//     compatible = "zmk,behavior-mod-morph";
+//     label = "/ /=";
+//     #binding-cells = <0>;
+//     mods = <(MOD_LSFT|MOD_RSFT)>;
+//     bindings = <&kp FSLH>, <&m_d_da>;
+// };
 mp_d_s: morph_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "/ /**/";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&mp_d_s_s>, <&kp LS(A)>;
+    bindings = <&kp FSLH>, <&kp LS(A)>;
     keep-mods = <(MOD_LALT)>;
 };
 
