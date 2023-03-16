@@ -61,20 +61,20 @@ mp_d_m: morph_dev_minus {
 // tap:         =
 // shift:       ===
 // alt:         =>
-mp_d_e_s: morph_dev_equal_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "= ===";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp EQUAL>, <&m_d_se>;
-};
-mp_d_e: morph_dev_equal {
+mp_d_e_a: morph_dev_equal_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "= =>";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&mp_d_e_s>, <&m_d_a>;
+    bindings = <&kp EQUAL>, <&m_d_a>;
     keep-mods = <(MOD_LALT)>;
+};
+mp_d_e: morph_dev_equal {
+    compatible = "zmk,behavior-mod-morph";
+    label = "= ===";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_e_a>, <&m_d_se>;
 };
 
 // tap:         /

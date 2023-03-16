@@ -75,9 +75,7 @@ m_d_a: macro_dev_arrow {
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
-        = <&macro_press   &kp LALT>
-        , <&none> //hack for vscode
-        , <&macro_release &kp LALT>
+        = <&none &kp LALT> /* ALT fix for VSCode */
         , <&macro_wait_time 100>
         , <&kp EQUAL &kp GT>;
 };
