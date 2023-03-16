@@ -107,6 +107,17 @@ m_d_lo: macro_dev_logical_or {
         <&kp PIPE &kp PIPE>;
 };
 
+m_d_loa: macro_dev_logical_or_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "||=";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp PIPE &kp PIPE>;
+};
+
 m_d_cto: macro_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
     label = "?░:░";
