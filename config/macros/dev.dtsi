@@ -145,14 +145,13 @@ m_d_bo: macro_boolean_operator {
 
 m_d_se: macro_strict_equality {
     compatible = "zmk,behavior-macro";
-    label = "!==";
+    label = "===";
     #binding-cells = <0>;
     wait-ms = <400>;
-    tap-ms = <30>;
     bindings
-        = <&kp EXCL>
-        , <&macro_wait_time 30>
-        , <&kp EQUAL &kp EQUAL>;
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp EQUAL &kp EQUAL &kp EQUAL>
 };
 
 m_d_si: macro_strict_inequality {
@@ -160,9 +159,8 @@ m_d_si: macro_strict_inequality {
     label = "!==";
     #binding-cells = <0>;
     wait-ms = <400>;
-    tap-ms = <30>;
     bindings
-        = <&kp EQUAL>
-        , <&macro_wait_time 30>
-        , <&kp EQUAL &kp EQUAL>;
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp EXCL &kp EQUAL &kp EQUAL>
 };
