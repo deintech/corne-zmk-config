@@ -171,7 +171,7 @@ Symbols and dev shortcuts for JS/TS.
 | Label             | Windows                                 | Action                      |
 | ----------------: | --------------------------------------: | --------------------------- |
 | <kbd>//</kbd>     | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
-| <kbd>/*░*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
+| <kbd>/*░*/</kbd>  | <kbd>⌥</kbd>+<kbd>/</kbd>               | Toggle block comment        |
 | <kbd><>░</></kbd> | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd><</kbd>  | Fragment brackets for React |
 
 #### 2. AXN

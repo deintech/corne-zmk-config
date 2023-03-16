@@ -18,6 +18,17 @@ m_d_ma: macro_dev_multiplication_assignment {
         , <&kp EQUAL>;
 };
 
+m_d_da: macro_dev_division_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "/=";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp FSLH &kp EQUAL>;
+};
+
 m_d_io: macro_dev_increment_operator {
     compatible = "zmk,behavior-macro";
     label = "++";
@@ -64,7 +75,7 @@ m_d_a: macro_dev_arrow {
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
-        = <&none &kp LALT>
+        = <&none &kp LALT> /* ALT fix for VSCode */
         , <&macro_wait_time 100>
         , <&kp EQUAL &kp GT>;
 };
