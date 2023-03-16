@@ -65,7 +65,7 @@ m_d_a: macro_dev_arrow {
     wait-ms = <400>;
     bindings
         = <&none>
-        , <&macro_wait_time 30>
+        , <&macro_wait_time 100>
         , <&kp EQUAL>
         , <&kp GT>;
 };
