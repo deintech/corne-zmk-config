@@ -75,7 +75,8 @@ m_d_a: macro_dev_arrow {
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
-        = <&none>
+        = <&macro_press   &kp LALT>
+        , <&none> //hack for vscode
         , <&macro_release &kp LALT>
         , <&macro_wait_time 100>
         , <&kp EQUAL &kp GT>;
