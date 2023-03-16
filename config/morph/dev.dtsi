@@ -58,6 +58,7 @@ mp_d_m: morph_dev_minus {
     bindings = <&kp MINUS>, <&m_d_sa>;
 };
 
+// FIXME
 // tap:         =
 // shift:       ===
 // alt:         =>
@@ -67,6 +68,7 @@ mp_d_e_a: morph_dev_equal_alt {
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp EQUAL>, <&m_d_a>;
+    keep-mods = <(MOD_LALT)>;
 };
 mp_d_e: morph_dev_equal {
     compatible = "zmk,behavior-mod-morph";
