@@ -4,9 +4,9 @@ ZMK configuration for [swept-crkbd](https://github.com/AYM1607/swept-crkbd/) als
 
 ![Front](.github/images/keyboard/front.jpg)
 
-This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** international layout), complemented with AHK scripts with easy access to development symbols and JS/TS shortcuts.
+This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** layout), complemented with AHK scripts with Spanish accents, easy access to development symbols and JS/TS shortcuts.
 
-![US International](.github/images/layout/US-International.png)
+> **US International** layout is another alternative, but it has a critical downside (at least on Windows) for programming due to dead keys. We are going to lose speed because need to press two keys instead of one: the diacritic or accent followed by an ending character (space, tab or enter) to produce it.
 
 ---
 
@@ -73,7 +73,7 @@ Icons used to describe some modifiers and actions
 | <kbd>🄰</kbd>   | <kbd>⇧</kbd>+<kbd>⌫</kbd>               | Caps lock                                             |
 | <kbd>⇧⇧</kbd>  | <kbd>L⇧</kbd>+<kbd>R⇧</kbd>              | [Caps word](https://zmk.dev/docs/behaviors/caps-word) |
 | <kbd>^^</kbd>  | <kbd>L^</kbd>+<kbd>R^</kbd>              | Cancel caps                                           |
-| <kbd>❖❖</kbd>  | <kbd>L❖</kbd>+<kbd>R❖</kbd>            | Open current layout on screen                         |
+| <kbd>❖❖</kbd>  | <kbd>L❖</kbd>+<kbd>R❖</kbd>            | Show current layout on screen                         |
 
 ### Layers
 
@@ -85,28 +85,22 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 
 ##### Spanish
 
-| Label        | Windows                                 | Android                                               |
-| :----------: | --------------------------------------: | :---------------------------------------------------- |
-| <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>a</kbd>              |
-| <kbd>Á</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>a</kbd> |
-| <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>e</kbd>              |
-| <kbd>É</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>e</kbd> |
-| <kbd>í</kbd> | <kbd>⌥</kbd>+<kbd>i</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>i</kbd>              |
-| <kbd>Í</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>i</kbd> |
-| <kbd>ó</kbd> | <kbd>⌥</kbd>+<kbd>o</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>o</kbd>              |
-| <kbd>Ó</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>o</kbd> |
-| <kbd>ú</kbd> | <kbd>⌥</kbd>+<kbd>u</kbd>              | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>u</kbd>              |
-| <kbd>Ú</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
-| <kbd>ü</kbd> | <kbd>^</kbd>+<kbd>y</kbd>               | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>u</kbd>              |
-| <kbd>Ü</kbd> | <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>y</kbd>  | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
-| <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>              | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>n</kbd>              |
-| <kbd>Ñ</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>⇧</kbd>+<kbd>n</kbd> |
-
-##### Symbols
-
-| Label         | Windows                                             |
-| :-----------: | --------------------------------------------------: |
-| <kbd>@</kbd>  | <kbd>⌥</kbd>+<kbd>q</kbd>                          |
+| Label        | Windows                                  | Android                                               |
+| :----------: | ---------------------------------------: | ----------------------------------------------------: |
+| <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>a</kbd>              |
+| <kbd>Á</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd>  | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>a</kbd> |
+| <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>e</kbd>              |
+| <kbd>É</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd>  | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>e</kbd> |
+| <kbd>í</kbd> | <kbd>⌥</kbd>+<kbd>i</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>i</kbd>              |
+| <kbd>Í</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd>  | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>i</kbd> |
+| <kbd>ó</kbd> | <kbd>⌥</kbd>+<kbd>o</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>o</kbd>              |
+| <kbd>Ó</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd>  | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>o</kbd> |
+| <kbd>ú</kbd> | <kbd>⌥</kbd>+<kbd>u</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>u</kbd>              |
+| <kbd>Ú</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd>  | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
+| <kbd>ü</kbd> | <kbd>^</kbd>+<kbd>u</kbd>                | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>u</kbd>              |
+| <kbd>Ü</kbd> | <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>u</kbd>   | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
+| <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>               | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>n</kbd>              |
+| <kbd>Ñ</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>  | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>⇧</kbd>+<kbd>n</kbd> |
 
 #### 1. DEV
 
@@ -118,45 +112,43 @@ Symbols and dev shortcuts for JS/TS.
 
 | Label           | Windows                                   |
 | :-------------: | ----------------------------------------: |
-| <kbd>°</kbd>    | <kbd>⌥</kbd>+<kbd>#</kbd>                |
+| <kbd>°</kbd>    | <kbd>⌥</kbd>+<kbd>#</kbd>                 |
 | <kbd>€</kbd>    | <kbd>⌥</kbd>+<kbd>$</kbd>                |
-| <kbd>«</kbd>    | <kbd>⌥</kbd>+<kbd>[</kbd>                |
-| <kbd>»</kbd>    | <kbd>⌥</kbd>+<kbd>]</kbd>                |
-| <kbd><=</kbd>   | <kbd>⌥</kbd>+<kbd><</kbd>                |
-| <kbd>>=</kbd>   | <kbd>⌥</kbd>+<kbd>></kbd>                |
-| <kbd>¡</kbd>    | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>!</kbd>   |
-| <kbd>¡░!</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>!</kbd>   |
-| <kbd>¿</kbd>    | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>?</kbd>   |
-| <kbd>¿░?</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>?</kbd>   |
+| <kbd>«</kbd>    | <kbd>⌥</kbd>++<kbd>[</kbd>               |
+| <kbd>»</kbd>    | <kbd>⌥</kbd>++<kbd>]</kbd>               |
+| <kbd>¡</kbd>    | <kbd>⌥</kbd>+<kbd>!</kbd>                |
+| <kbd>¿</kbd>    | <kbd>⌥</kbd>+<kbd>?</kbd>                |
 
 ##### JS/TS
 
-| Label                                                                                                                       | Windows                 |
+| Label                                                                                                                       | Windows                     |
 | :-------------------------------------------------------------------------------------------------------------------------: | ---------------------------: |
-| <kbd>[++](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment)</kbd>                      |  <kbd>⇧</kbd>+<kbd>+</kbd>  |
-| <kbd>[+=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment)</kbd>            |  <kbd>⌥</kbd>+<kbd>+</kbd>  |
-| <kbd>[--](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)</kbd>                      |  <kbd>⇧</kbd>+<kbd>-</kbd>  |
-| <kbd>[-=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment)</kbd>         |  <kbd>⌥</kbd>+<kbd>-</kbd>  |
-| <kbd>[**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)</kbd>                 |  <kbd>⇧</kbd>+<kbd>*</kbd>  |
-| <kbd>[*=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment)</kbd>      |  <kbd>⌥</kbd>+<kbd>*</kbd>  |
-| <kbd>[/=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment)</kbd>            |  <kbd>⌥</kbd>+<kbd>/</kbd>  |
-| <kbd>[&&](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)</kbd>                    |  <kbd>⇧</kbd>+<kbd>&</kbd>  |
-| <kbd>[&&=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)</kbd>        |  <kbd>⌥</kbd>+<kbd>&</kbd>  |
-| <kbd>[\|\|](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)</kbd>                   |  <kbd>⇧</kbd>+<kbd>\|</kbd>  |
-| <kbd>[\|\|=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)</kbd>       |  <kbd>⌥</kbd>+<kbd>\|</kbd>  |
-| <kbd>[??](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)</kbd>             |  <kbd>⇧</kbd>+<kbd>?</kbd>  |
-| <kbd>[??=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment)</kbd> |  <kbd>⌥</kbd>+<kbd>?</kbd>  |
-| <kbd>[=>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)</kbd>                |  <kbd>⇧</kbd>+<kbd>=</kbd>  |
-| <kbd>[===](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)</kbd>               |  <kbd>⌥</kbd>+<kbd>=</kbd>  |
-| <kbd>[!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not_!!)</kbd>      |  <kbd>⇧</kbd>+<kbd>!</kbd>  |
-| <kbd>[!==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)</kbd>             |  <kbd>⌥</kbd>+<kbd>!</kbd>  |
+| <kbd>[++](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment)</kbd>                      |  <kbd>⌥</kbd>+<kbd>+</kbd>  |
+| <kbd>[+=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment)</kbd>            |  <kbd>⇧</kbd>+<kbd>+</kbd>  |
+| <kbd>[--](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)</kbd>                      |  <kbd>⌥</kbd>+<kbd>-</kbd>  |
+| <kbd>[-=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment)</kbd>         |  <kbd>⇧</kbd>+<kbd>-</kbd>  |
+| <kbd>[**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)</kbd>                 |  <kbd>⌥</kbd>+<kbd>*</kbd>  |
+| <kbd>[*=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment)</kbd>      |  <kbd>⇧</kbd>+<kbd>*</kbd>  |
+| <kbd>[/=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment)</kbd>            |  <kbd>⇧</kbd>+<kbd>/</kbd>  |
+| <kbd>[&&](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)</kbd>                    |  <kbd>⌥</kbd>+<kbd>&</kbd>  |
+| <kbd>[&&=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)</kbd>        |  <kbd>⇧</kbd>+<kbd>&</kbd>  |
+| <kbd>[\|\|](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)</kbd>                   |  <kbd>⌥</kbd>+<kbd>\|</kbd>  |
+| <kbd>[\|\|=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)</kbd>       |  <kbd>⇧</kbd>+<kbd>\|</kbd>  |
+| <kbd>[??](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)</kbd>             |  <kbd>⌥</kbd>+<kbd>?</kbd>  |
+| <kbd>[??=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment)</kbd> |  <kbd>⇧</kbd>+<kbd>?</kbd>  |
+| <kbd>[=>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)</kbd>                |  <kbd>⌥</kbd>+<kbd>=</kbd>  |
+| <kbd>[===](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)</kbd>               |  <kbd>⇧</kbd>+<kbd>=</kbd>  |
+| <kbd>[!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not_!!)</kbd>      |  <kbd>⌥</kbd>+<kbd>!</kbd>  |
+| <kbd>[!==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)</kbd>             |  <kbd>⇧</kbd>+<kbd>!</kbd>  |
+| <kbd>[<=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal)</kbd>             | <kbd>⇧</kbd>+<kbd><</kbd>   |
+| <kbd>[>=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal)</kbd>          | <kbd>⇧</kbd>+<kbd>></kbd>   |
 
 ##### Auto Brackets
 
-| Label | Windows                                             | Action          |
-| :---: | --------------------------------------------------: | --------------- |
-| <░/>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | HTML Void Tag   |
-| </░>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>             | HTML Close Tag  |
+| Label            | Windows                                             | Action          |
+| :--------------: | --------------------------------------------------: | --------------- |
+| <kbd><░/></kbd>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | HTML Void Tag   |
+| <kbd></░></kbd>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>             | HTML Close Tag  |
 
 ##### Browser DevTools
 
@@ -171,8 +163,7 @@ Symbols and dev shortcuts for JS/TS.
 | Label             | Windows                                 | Action                      |
 | ----------------: | --------------------------------------: | --------------------------- |
 | <kbd>//</kbd>     | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
-| <kbd>/*░*/</kbd>  | <kbd>⌥</kbd>+<kbd>/</kbd>               | Toggle block comment        |
-| <kbd><>░</></kbd> | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd><</kbd>  | Fragment brackets for React |
+| <kbd>/*░*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
 
 #### 2. AXN
 
@@ -238,7 +229,6 @@ Dedicated to Bluetooth and media controls.
 | <kbd>🔅</kbd>  | Bright down              |
 | <kbd>🔆</kbd>  | Bright up                |
 | <kbd>⎉</kbd>   | Connect Quick Action     |
-| <kbd>⎚</kbd>   | Fancy Zones              |
 | <kbd>▤</kbd>   | Task Manager             |
 | <kbd>ⓘ</kbd>   | System Info             |
 | <kbd>⛨</kbd>   | Windows Security        |
