@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: deinsoftware
-      revision: battery
+      revision: swept_battery
       import: app/west.yml
   self:
     path: config
