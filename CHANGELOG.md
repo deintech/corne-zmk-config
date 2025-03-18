@@ -11,7 +11,7 @@
 ## 8.0.0
 
 - Create multiple layers by OS starting with Android
-- Change the dead keys behavior (using again the ALT key) and accents with macros~
+- Change the dead keys behavior (using again the ALT key) and accents with macros
 
 ## 7.0.0
 
