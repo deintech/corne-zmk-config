@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 8.2.0
+
+-  Update combo keys to show help keyboad layout.
+
 ## 8.1.0
 
 - Updated automate scripts notifications for Android
