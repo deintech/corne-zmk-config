@@ -1,6 +1,6 @@
-# Windows
+# macOS
 
-This is a WIP layout based on Colemak DHm for using on macOS (with **en-US International** layout on host) that includes Spanish accents, and complemented with easy access to development symbols and JS/TS shortcuts.
+This is a WIP layout based on Colemak DHm for using on macOS (with **en-US International** ANSI layout on host) that includes Spanish accents, and complemented with easy access to development symbols and JS/TS shortcuts.
 
 ![US International](/.github/images/layout/US-International.png)
 
