@@ -47,7 +47,7 @@ MORPH_KAS(
     cb,
     clear_bluetooth,
     MOD_LALT,
-    &none,
+    &studio_unlock,   // tap:   zmk studio unlock
     &bt BT_CLR,       // alt:   clear current profile
     &bt BT_CLR_ALL    // shift: clear all profiles
 )
