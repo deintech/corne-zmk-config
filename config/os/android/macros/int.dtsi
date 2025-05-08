@@ -6,7 +6,7 @@ m_ai_a: macro_android_int_a {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp RA(E)>
+        , <&kp SQT>
         , <&kp A>;
 };
 
@@ -18,7 +18,7 @@ m_ai_as: macro_android_int_a_shift {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp RA(E)>
+        , <&kp SQT>
         , <&kp RS(A)>;
 };
 
@@ -30,7 +30,7 @@ m_ai_e: macro_android_int_e {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp E>;
 };
 
@@ -42,7 +42,7 @@ m_ai_es: macro_android_int_e_shift {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp LS(E)>;
 };
 
@@ -54,7 +54,7 @@ m_ai_i: macro_android_int_i {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp I>;
 };
 
@@ -66,7 +66,7 @@ m_ai_is: macro_android_int_i_shift {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp LS(I)>;
 };
 
@@ -78,7 +78,7 @@ m_ai_o: macro_android_int_o {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp O>;
 };
 
@@ -90,7 +90,7 @@ m_ai_os: macro_android_int_o_shift {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp LS(O)>;
 };
 
@@ -102,7 +102,7 @@ m_ai_u: macro_android_int_u {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp U>;
 };
 
@@ -114,7 +114,7 @@ m_ai_us: macro_android_int_u_shift {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(E)>
+        , <&kp SQT>
         , <&kp LS(U)>;
 };
 
@@ -150,7 +150,7 @@ m_ai_n: macro_android_int_n {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(N)>
+        , <&kp TILDE>
         , <&kp N>;
 };
 
@@ -162,7 +162,7 @@ m_ai_ns: macro_android_int_n_shift {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(N)>
+        , <&kp TILDE>
         , <&kp LS(N)>;
 };
 
