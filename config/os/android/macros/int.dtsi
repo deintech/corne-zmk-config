@@ -126,7 +126,7 @@ m_ai_y: macro_android_int_y {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(U)>
+        , <&kp DQT>
         , <&kp U>;
 };
 
@@ -138,7 +138,7 @@ m_ai_ys: macro_android_int_y_shift {
     bindings
         = <&none>
         , <&macro_wait_time MC_WAIT>
-        , <&kp LA(U)>
+        , <&kp DQT>
         , <&kp LS(U)>;
 };
 
