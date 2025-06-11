@@ -1,0 +1,5 @@
+combo_mac_mSTG {
+    key-positions = <38 39>;
+    slow-release;
+    layers = <&mp_w_stg>;
+};
