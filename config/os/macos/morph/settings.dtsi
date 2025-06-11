@@ -49,7 +49,7 @@ MORPH_KA(
     left,
     left,
     MOD_LALT,
-    &kp LG(B)),                 // tap:   ide: toggle primary side bar 
+    &kp LG(B),                  // tap:   ide: toggle primary side bar 
     &kp LA(LG(LC(LEFT))),       // alt:   rectangle left
 )
 
@@ -60,7 +60,7 @@ MORPH_KA(
     right,
     right,
     MOD_LALT,
-    &kp LG(J)),                // tap:   ide: toggle panel bottom bar 
+    &kp LG(J),                 // tap:   ide: toggle panel bottom bar 
     &kp LS(LA(LG(DOWN))),      // alt:   rectangle right
 )
 
@@ -71,7 +71,7 @@ MORPH_KA(
     right,
     right,
     MOD_LALT,
-    &kp LA(LG(B))),             // tap:   ide: toggle secondary side bar 
+    &kp LA(LG(B)),              // tap:   ide: toggle secondary side bar 
     &kp LA(LG(LC(RIGHT))),      // alt:   rectangle right
 )
 
