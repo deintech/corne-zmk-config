@@ -57,8 +57,8 @@ MORPH_KA(
 MORPH_KA(
     m,
     STG,
-    right,
-    right,
+    down,
+    down,
     MOD_LALT,
     &kp LG(J),                 // tap:   ide: toggle panel bottom bar 
     &kp LS(LA(LG(DOWN))),      // alt:   rectangle right
