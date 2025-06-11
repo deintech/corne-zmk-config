@@ -136,19 +136,18 @@
             #define MSRU5  &none                        // tap: task manager
 
             #define MSRM0  &mp_mSTG_m                   // tap: vol mute | shift: mic mute
-            #define MSRM1  &hm RSHFT  LS(LA(LG(LEFT)))  // tap: rectangle left half
+            #define MSRM1  &hm_mSTG_RS  LSHIFT 0        // tap: mp_mSTG_left
             #define MSRM2  &hm_mSTG_RA  LALT 0          // tap: mp_mSTG_rectangle
-            #define MSRM3  &kp LS(LA(LG(RIGHT)))        // tap: rectangle right half
+            #define MSRM3  &mp_mSTG_right               // tap: ide secondary side bar | alt: rectangle right
             #define MSRM4  &kp LC(UP)                   // tap: mission control
             #define MSRM5  &none
 
             #define MSRD0  &kp C_VOL_DN
             #define MSRD1  &kp LA(LG(LC(LEFT)))         // tap: rectangle bottom left
-            #define MSRD2  &kp LS(LA(LG(DOWN)))         // tap: rectangle bottom half
+            #define MSRD2  &mp_mSTG_down                // tap: ide panel bottom bar | alt: rectangle bottom down
             #define MSRD3  &kp LA(LG(LC(RIGHT)))        // tap: rectangle bottom right
             #define MSRD4  &kp LC(DOWN)                 // tap: application window
             #define MSRD5  &none
-
 
             #define MSLT2  &kp C_BRI_DN
             #define MSLT1  KEY_SPC

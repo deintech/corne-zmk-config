@@ -42,6 +42,39 @@ MORPH_KAS(
     &kp LS(LA(LC(F)))           // shift: center
 )
 
+// mp_mSTG_left
+MORPH_KA(
+    m,
+    STG,
+    left,
+    left,
+    MOD_LALT,
+    &kp LG(B)),                 // tap:   ide: toggle primary side bar 
+    &kp LA(LG(LC(LEFT))),       // alt:   rectangle left
+)
+
+// mp_mSTG_down
+MORPH_KA(
+    m,
+    STG,
+    right,
+    right,
+    MOD_LALT,
+    &kp LG(J)),                // tap:   ide: toggle panel bottom bar 
+    &kp LS(LA(LG(DOWN))),      // alt:   rectangle right
+)
+
+// mp_mSTG_right
+MORPH_KA(
+    m,
+    STG,
+    right,
+    right,
+    MOD_LALT,
+    &kp LA(LG(B))),             // tap:   ide: toggle secondary side bar 
+    &kp LA(LG(LC(RIGHT))),      // alt:   rectangle right
+)
+
 // mp_mSTG_m
 MORPH_KS(
     m,
