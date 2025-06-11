@@ -62,7 +62,7 @@
             #define MA19  &hm  LSHFT  N4
             #define MA20  &hm  LALT   N5
             #define MA21  &hm  LCMD   N6
-            #define MA22  &hm  LCTRL  EQUAL
+            #define MA22  &hm  LCTRL  DOT
 
             #define MA38  &to_mBAS
             #define MA39  &mo_mFNKmAXN_to_mFNK    0 0
@@ -75,10 +75,10 @@
 
             display-name = "mAXN";
             bindings = <
-    MKY_ESC      MA01  &mp_ma_prev    &kp UP  &mp_ma_next      MA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   MNV_DEL
-  &mp_mk_bc      MA13         MA14      MA15         MA16      MA17                 &kp N0     MA19    MA20    MA21             MA22  MNV_BSPC
-    MKY_TAB  MKY_UNDO      MKY_CUT  MKY_COPY    MKY_PASTE  MKY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE     &none
-                                      &mp_cs      KEY_SPC      MA38                   MA39  MKY_RET  &mp_dc
+    MKY_ESC      MA01  &mp_ma_prev    &kp UP  &mp_ma_next      MA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY    MNV_DEL
+  &mp_mk_bc      MA13         MA14      MA15         MA16      MA17                 &kp N0     MA19    MA20    MA21             MA22   MNV_BSPC
+    MKY_TAB  MKY_UNDO      MKY_CUT  MKY_COPY    MKY_PASTE  MKY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE  &kp EQUAL
+                                       &none      KEY_SPC      MA38                   MA39  MKY_RET   &none
             >;
         };
 
@@ -101,7 +101,7 @@
     MKY_ESC  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &none    &none  &kp PG_UP  &none  &none   MNV_DEL
   &mp_mk_bc    MK13     MK14     MK15     MK16  &none                  &none     MK19       MK20   MK21   MK22  MNV_BSPC
     MKY_TAB  &kp F1   &kp F2   &kp F3   &kp F4  &none                  &none    &none      &none  &none  &none     &none
-                               &mp_cs  KEY_SPC   MK38                   MK39  MKY_RET     &mp_dc
+                                &none  KEY_SPC   MK38                   MK39  MKY_RET      &none
             >;
         };
 
