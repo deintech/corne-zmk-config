@@ -1,6 +1,6 @@
 combo_mac_mSTG {
     bindings = <&mp_w_stg>;
-    key-positions = <38 39>;
+    key-positions = <37 40>;
     slow-release;
     layers = <mBAS>;
 };
