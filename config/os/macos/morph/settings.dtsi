@@ -48,7 +48,7 @@ MORPH_KA(
     up,
     up,
     MOD_LALT,
-    &kp LS(LG(F)),              // tap:   ide: Search
+    &kp LS(LC(G)),              // tap:   ide: source control
     &kp LS(LA(LG(UP)))          // alt:   rectangle top half
 )
 
@@ -59,7 +59,7 @@ MORPH_KA(
     topright,
     topright,
     MOD_LALT,
-    &kp LS(LC(G)),              // tap:   ide: source control
+    &kp LS(LG(D)),              // tap:   ide: debugger
     &kp LS(LA(LG(LC(RIGHT))))   // alt:   rectangle top right
 )
 
