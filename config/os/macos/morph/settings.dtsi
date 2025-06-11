@@ -30,16 +30,37 @@ MORPH_KAS(
 )
 // ctrl: adding ctrl key copy to clipboard instead of saving a file
 
-// mp_mSTG_rectangle
-MORPH_KAS(
+// mp_mSTG_topleft
+MORPH_KA(
     m,
     STG,
-    rectangle,
-    rectangle,
+    topleft,
+    topleft,
     MOD_LALT,
-    &kp LA(LC(F)),              // tap:   maximize
-    &kp LA(LC(BACKSPACE)),      // alt:   restore
-    &kp LS(LA(LC(F)))           // shift: center
+    &kp LS(LG(E)),              // tap:   ide: explorer
+    &kp LS(LA(LG(LC(LEFT))))    // alt:   rectangle top left
+)
+
+// mp_mSTG_up
+MORPH_KA(
+    m,
+    STG,
+    up,
+    up,
+    MOD_LALT,
+    &kp LS(LG(F)),              // tap:   ide: Search
+    &kp LS(LA(LG(UP)))          // alt:   rectangle top half
+)
+
+// mp_mSTG_topright
+MORPH_KA(
+    m,
+    STG,
+    topright,
+    topright,
+    MOD_LALT,
+    &kp LS(LC(G)),              // tap:   ide: source control
+    &kp LS(LA(LG(LC(RIGHT))))   // alt:   rectangle top right
 )
 
 // mp_mSTG_left
@@ -53,15 +74,16 @@ MORPH_KA(
     &kp LA(LG(LC(LEFT)))        // alt:   rectangle left
 )
 
-// mp_mSTG_down
-MORPH_KA(
+// mp_mSTG_rectangle
+MORPH_KAS(
     m,
     STG,
-    down,
-    down,
+    rectangle,
+    rectangle,
     MOD_LALT,
-    &kp LG(J),                 // tap:   ide: toggle panel bottom bar 
-    &kp LS(LA(LG(DOWN)))       // alt:   rectangle right
+    &kp LA(LC(F)),              // tap:   maximize
+    &kp LA(LC(BACKSPACE)),      // alt:   restore
+    &kp LS(LA(LC(F)))           // shift: center
 )
 
 // mp_mSTG_right
@@ -73,6 +95,39 @@ MORPH_KA(
     MOD_LALT,
     &kp LA(LG(B)),              // tap:   ide: toggle secondary side bar 
     &kp LA(LG(LC(RIGHT)))       // alt:   rectangle right
+)
+
+// mp_mSTG_downleft
+MORPH_KA(
+    m,
+    STG,
+    downleft,
+    downleft,
+    MOD_LALT,
+    &none,                      // tap:   none
+    &kp LA(LG(LC(LEFT)))        // alt:   rectangle down left
+)
+
+// mp_mSTG_down
+MORPH_KA(
+    m,
+    STG,
+    down,
+    down,
+    MOD_LALT,
+    &kp LG(J),                 // tap:   ide: toggle panel bottom bar 
+    &kp LS(LA(LG(DOWN)))       // alt:   rectangle right
+)
+
+// mp_mSTG_downright
+MORPH_KA(
+    m,
+    STG,
+    downright,
+    downright,
+    MOD_LALT,
+    &none,                      // tap:   none
+    &kp LA(LG(LC(RIGHT)))       // alt:   rectangle down right
 )
 
 // mp_mSTG_m

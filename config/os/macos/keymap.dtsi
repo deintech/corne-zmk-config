@@ -129,11 +129,11 @@
 
 
             #define MSRU0  &kp C_VOL_UP
-            #define MSRU1  &kp LS(LA(LG(LC(LEFT))))     // tap: rectangle top left
-            #define MSRU2  &kp LS(LA(LG(UP)))           // tap: rectangle top half
-            #define MSRU3  &kp LS(LA(LG(LC(RIGHT))))    // tap: rectangle top right
-            #define MSRU4  &none
-            #define MSRU5  &none                        // tap: task manager
+            #define MSRU1  &mp_mSTG_topleft             // tap: ide explorer | alt: rectangle top left
+            #define MSRU2  &mp_mSTG_up                  // tap: ide search | alt: rectangle top halt
+            #define MSRU3  &mp_mSTG_topright            // tap: ide source control | alt: rectangle top right
+            #define MSRU4  &kp LS(LG(D))                // tap: ide debug
+            #define MSRU5  &kp LS(LG(X))                // tap: ide extensions                       
 
             #define MSRM0  &mp_mSTG_m                   // tap: vol mute | shift: mic mute
             #define MSRM1  &hm_mSTG_RS  LSHIFT 0        // tap: mp_mSTG_left
@@ -143,11 +143,11 @@
             #define MSRM5  &none
 
             #define MSRD0  &kp C_VOL_DN
-            #define MSRD1  &kp LA(LG(LC(LEFT)))         // tap: rectangle bottom left
+            #define MSRD1  &mp_mSTG_downleft            // tap: none | alt: rectangle bottom left
             #define MSRD2  &mp_mSTG_down                // tap: ide panel bottom bar | alt: rectangle bottom down
-            #define MSRD3  &kp LA(LG(LC(RIGHT)))        // tap: rectangle bottom right
+            #define MSRD3  &mp_mSTG_downright           // tap: none | alt: rectangle bottom right
             #define MSRD4  &kp LC(DOWN)                 // tap: application window
-            #define MSRD5  &none
+            #define MSRD5  &kp LC(LS(LG(T)))            // tap: ide todo                       
 
             #define MSLT2  &kp C_BRI_DN
             #define MSLT1  KEY_SPC
