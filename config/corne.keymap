@@ -97,6 +97,7 @@
 
         #include "os/macos/combos/base.dtsi"
         #include "os/macos/combos/help.dtsi"
+        #include "os/macos/combos/settings.dtsi"
 
         #include "os/windows/combos/base.dtsi"
         #include "os/windows/combos/help.dtsi"

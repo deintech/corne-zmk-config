@@ -137,7 +137,7 @@
 
             #define MSRM0  &mp_mSTG_m                   // tap: vol mute | shift: mic mute
             #define MSRM1  &hm_mSTG_RS  LSHIFT 0        // tap: mp_mSTG_left
-            #define MSRM2  &hm_mSTG_RA  LALT 0          // tap: mp_mSTG_rectangle
+            #define MSRM2  &hm_mSTG_RA  LALT   0        // tap: mp_mSTG_rectangle
             #define MSRM3  &mp_mSTG_right               // tap: ide secondary side bar | alt: rectangle right
             #define MSRM4  &kp LC(UP)                   // tap: mission control
             #define MSRM5  &none
